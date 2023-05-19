@@ -6,8 +6,13 @@ html {
     font-size: 62.5%;
 }
 
+:root {
+    --primary-color: #2073d4
+}
+
 body {
     font-size: 1.6rem;
+    color: #c9d2da;
     font-family: "Poppins", sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -30,11 +35,31 @@ a {
     margin: 0 auto;
 }
 
+.btn {
+    display: inline-block;
+    min-width: 170px;
+    font-weight: 500;
+    padding: 20px 20px;
+    border-radius: 16px;
+    color: #fff;
+    background: transparent;
+    border: 3px solid #1b4f8b;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #0c3b71 ;
+    border-color: transparent;
+}
+
 /* Header */
 
 .header {
+    position: sticky;
+    top: 0;
     padding: 10px 0;
-    background: #10375c;
+    background: var(--primary-color);
+    z-index: 1;
 }
 
 .header__inner {
@@ -73,6 +98,11 @@ a {
     font-weight: 500;
     color: #c9d2da;
     padding: 10px 20px;
+    transition: .3s;
+}
+
+.nav__link:hover {
+    color: #fff
 }
 
 .nav__item--action {
@@ -93,19 +123,24 @@ a {
 }
 
 .header__action {
+    display: inline-block;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     width: 45px;
     height: 45px;
+    color:  #c9d2da;
     border: 2px solid #9da6a5;
     border-radius: 50%;
     margin-right: 16px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
+
+
 .header__action:hover {
+    color: #fff;
     background: #2e80ce;
     border-color: transparent;
 }
@@ -138,4 +173,260 @@ a {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+    padding: 60px 110px;
+    background: var(--primary-color);
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.hero__content {
+    width: 50%;
+}
+
+.hero__heading {
+    width: 600px;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.hero__desc {
+    width: 500px;
+    font-weight: 400;
+    line-height: 1.67;
+    color: #c9d2da;
+    margin-top: 30px;
+}
+
+.hero__cta {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 90px;
+}
+.hero__watch-video {
+    position: relative;
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.hero-watch-video__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.6s;
+}
+
+.hero__watch-video:hover .hero-watch-video__icon {
+    transform: rotate(360deg);
+}
+
+.hero-watch-video__text::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -2px;
+    top: -7px;
+    width: 55px;
+    height: 55px;
+    border: 5px solid #0c3b71;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.hero__watch-video:hover .hero-watch-video__text::before {
+    transform: rotate(180deg);
+}
+
+.hero-watch-video__text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #c9d2da;
+    transition: 0.3s;
+}
+
+.hero__watch-video:hover .hero-watch-video__text {
+    color: #fff;
+}
+
+.hero__img-block {
+    position: relative;
+    width: 46%;
+}
+
+.hero-img__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.hero__img--small {
+    position: relative;
+    left: -30px;
+    top: -20px;
+    width: 250px;
+    height: 450px;
+    object-position: center;
+}
+
+.hero-summary__courses {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    position: absolute;
+    top: 35px;
+    left: -44px;
+    width: 157px;
+    height: 75px;
+    background: #fefefd;
+    padding: 18px 25px;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+}
+
+.summary-courses__book {
+    position: relative;
+    width: 36px;
+    height: 40px;
+    background: #ff8282;
+}
+
+.summary-courses__book::before {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.summary-label {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.hero-summary__schedules {
+    position: absolute;
+    top: 448px;
+    left: -21px;
+    width: 124px;
+    height: 132px;
+    background: #ffffff;
+    padding: 16px 25px 23px;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.hero-summary__progress {
+    position: relative;
+    width: 74px;
+    height: 6px;
+    background: #edf1f5;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+.hero-summary__progress::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background: #fb9899;
+    border-radius: 3px;
+}
+
+.hero-summary__progress:first-of-type {
+    margin-top: 16px;
+}
+
+.hero-summary__progress:first-of-type::before {
+    width: 39px;
+    height: 6px;
+    background: #fb9899;
+    border-radius: 3px;
+}
+
+.hero-summary__progress:nth-of-type(2)::before {
+    width: 51px;
+    height: 6px;
+}
+
+.hero-summary__progress:nth-of-type(3)::before {
+    width: 33px;
+    height: 6px;
+}
+.hero-summary__progress:nth-of-type(4) {
+    width: 26px;
+    height: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-summary__avatar-block {
+    position: absolute;
+    top: 437px;
+    left: 284px;
+    width: 207px;
+    height: 90px;
+    background: #fefefd;
+    padding: 17px 35px;
+    box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.summary__avatar-group {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.summary__avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.summary__avatar:last-child {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 3.3;
+    text-align: center;
+    color: #ffffff;
+    background: orange;
+}
+.summary__avatar + .summary__avatar {
+    margin-left: -10px;
 }

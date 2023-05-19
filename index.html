@@ -29,7 +29,10 @@
                     <a href="#!">
                         <div class="logo">
                             <span class="logo__text">
-                                <span class="logo__branch">LightKey <span style="color: orange">.</span></span>
+                                <span class="logo__branch"
+                                    >LightKey
+                                    <span style="color: orange">.</span></span
+                                >
                             </span>
                         </div>
                     </a>
@@ -42,7 +45,9 @@
                                 <a href="#!" class="nav__link">About</a>
                             </li>
                             <li class="nav__item nav__item--action">
-                                <a href="#!" class="nav__link nav__link--action">Courses</a>
+                                <a href="#!" class="nav__link nav__link--action"
+                                    >Courses</a
+                                >
                             </li>
                             <li class="nav__item">
                                 <a href="#!" class="nav__link">Blog</a>
@@ -52,34 +57,36 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="header__action">
-                        <a href="#!" class="header__login">
-                            <svg
-                                width="15"
-                                height="20"
-                                viewBox="0 0 15 20"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M7.1466 8.96416C7.05493 8.95499 6.94493 8.95499 6.8441 8.96416C4.66243 8.89083 2.92993 7.10333 2.92993 4.90333C2.92993 2.65749 4.74493 0.833328 6.99993 0.833328C9.24576 0.833328 11.0699 2.65749 11.0699 4.90333C11.0608 7.10333 9.32826 8.89083 7.1466 8.96416Z"
-                                    stroke="#c9d2da"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                ></path>
-                                <path
-                                    d="M2.56341 12.3467C0.345075 13.8317 0.345075 16.2517 2.56341 17.7275C5.08424 19.4142 9.21841 19.4142 11.7392 17.7275C13.9576 16.2425 13.9576 13.8225 11.7392 12.3467C9.22758 10.6692 5.09341 10.6692 2.56341 12.3467Z"
-                                    stroke="#c9d2da"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                ></path>
-                            </svg>
-                        </a>
-                    </div>
+                    <a href="#!" class="header__action">
+                        <svg
+                            width="15"
+                            height="20"
+                            viewBox="0 0 15 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M7.1466 8.96416C7.05493 8.95499 6.94493 8.95499 6.8441 8.96416C4.66243 8.89083 2.92993 7.10333 2.92993 4.90333C2.92993 2.65749 4.74493 0.833328 6.99993 0.833328C9.24576 0.833328 11.0699 2.65749 11.0699 4.90333C11.0608 7.10333 9.32826 8.89083 7.1466 8.96416Z"
+                                stroke="currentcolor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                d="M2.56341 12.3467C0.345075 13.8317 0.345075 16.2517 2.56341 17.7275C5.08424 19.4142 9.21841 19.4142 11.7392 17.7275C13.9576 16.2425 13.9576 13.8225 11.7392 12.3467C9.22758 10.6692 5.09341 10.6692 2.56341 12.3467Z"
+                                stroke="currentcolor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                        </svg>
+                    </a>
                     <div class="header__search">
-                        <input type="text" class="header-search__input" placeholder="Search..."/>
+                        <input
+                            type="text"
+                            class="header-search__input"
+                            placeholder="Search..."
+                        />
                         <button type="button" class="search__btn">
                             <svg
                                 width="18"
@@ -108,5 +115,114 @@
                 </div>
             </div>
         </header>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <section class="hero__content">
+                        <h1 class="hero__heading">
+                            Build an Incredible Learning Experience
+                        </h1>
+                        <p class="hero__desc">
+                            Build new skills for that “this is my year” feeling
+                            with courses, certificates, and degrees from
+                            world-class universities and companies.
+                        </p>
+                        <div class="hero__cta">
+                            <a href="#!" class="btn hero__btn"
+                                >Explore Courses</a
+                            >
+                            <button class="hero__watch-video">
+                                <span class="hero-watch-video__icon"
+                                    ><svg
+                                        width="14"
+                                        height="18"
+                                        viewBox="0 0 14 18"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14 9L0 0V18L14 9Z"
+                                            fill="#2E80CE"
+                                        />
+                                    </svg>
+                                </span>
+                                <span class="hero-watch-video__text"
+                                    >Watch Video</span
+                                >
+                            </button>
+                        </div>
+                    </section>
+                    <figure class="hero__img-block">
+                        <div class="hero-img__wrap">
+                            <img
+                                src="./assets/img/hero-01.jpg"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <img
+                                src="./assets/img/hero-02.jpg"
+                                alt=""
+                                class="hero__img hero__img--small"
+                            />
+                        </div>
+
+                        <div class="hero-summary__courses">
+                            <div class="summary-courses__book"></div>
+
+                            <span class="summary-label"
+                                >Courses<br />1000+</span
+                            >
+                        </div>
+                        <div class="hero-summary__schedules">
+                            <span style="display: block" class="summary-label"
+                                >Schedules</span
+                            >
+                            <div class="hero-summary__progress"></div>
+                            <div class="hero-summary__progress"></div>
+                            <div class="hero-summary__progress"></div>
+                            <div class="hero-summary__progress"></div>
+                        </div>
+                        <div class="hero-summary__avatar-block">
+                            <div class="summary-label">Our Active Students</div>
+                            <div class="summary__avatar-group">
+                                <img
+                                    src="./assets/img/sumary-avatar-01.jpeg"
+                                    alt=""
+                                    class="summary__avatar"
+                                />
+                                <img
+                                    src="./assets/img/sumary-avatar-02.jpeg"
+                                    alt=""
+                                    class="summary__avatar"
+                                />
+                                <img
+                                    src="./assets/img/sumary-avatar-03.jpg"
+                                    alt=""
+                                    class="summary__avatar"
+                                />
+                                <img
+                                    src="./assets/img/sumary-avatar-04.jpeg"
+                                    alt=""
+                                    class="summary__avatar"
+                                />
+                                <span class="summary__avatar">10K+</span>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- Features -->
+        <section class="features">
+            <div class="container">
+                <div class="features__list">
+                    <div class="feature__item"></div>
+                    <div class="feature__item"></div>
+                    <div class="feature__item"></div>
+                    <div class="feature__item"></div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
