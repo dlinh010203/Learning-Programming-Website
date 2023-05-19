@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* Common */
+
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    padding: 10px 0;
+    background: #10375c;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo__branch {
+    position: relative;
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1.4;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nav__list {
+    display: flex;
+}
+.nav {
+    margin-left: 50px;
+}
+
+.nav__link {
+    font-size: 1.4rem;
+    position: relative;
+    font-weight: 500;
+    color: #c9d2da;
+    padding: 10px 20px;
+}
+
+.nav__item--action {
+    margin-right: 15px;
+}
+
+.nav__link--action::after {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #c9d2da;
+    border-left: 2px solid #c9d2da;
+    rotate: -135deg;
+}
+
+.header__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #9da6a5;
+    border-radius: 50%;
+    margin-right: 16px;
+    transition: .3s;
+}
+
+.header__action:hover {
+    background: #2e80ce;
+    border-color: transparent;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 40px;
+    background: #f6f6f6;
+    padding: 8px 16px;
+    border-radius: 999px;
+}
+
+.header-search__input {
+    padding: 8px 0;
+    width: 105px;
+    height: 12px;
+    font-size: 16px;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.search__btn {
+    padding-top: 4px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
