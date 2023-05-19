@@ -194,7 +194,7 @@ a {
 }
 
 .hero__heading {
-    width: 600px;
+    width: 620px;
     font-size: 5rem;
     font-weight: 700;
     line-height: 1.5;
@@ -270,7 +270,7 @@ a {
 
 .hero__img-block {
     position: relative;
-    width: 46%;
+    flex-grow: 1;
 }
 
 .hero-img__wrap {
