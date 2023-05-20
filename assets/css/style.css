@@ -138,21 +138,29 @@ a {
 }
 
 .header__action {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 8px
+
+}
+
+.header-action__login,
+.header-action__cart {
     display: inline-block;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
     width: 45px;
     height: 45px;
     color: #c9d2da;
     border: 2px solid #9da6a5;
     border-radius: 50%;
-    margin-right: 16px;
     transition: 0.3s;
 }
 
-.header__action:hover {
+.header-action__login:hover,
+.header-action__cart:hover {
     color: #fff;
     background: #2e80ce;
     border-color: transparent;
@@ -165,6 +173,7 @@ a {
     width: 250px;
     height: 40px;
     background: #f6f6f6;
+    margin-left: 16px;
     padding: 8px 16px;
     border-radius: 999px;
 }
@@ -685,6 +694,7 @@ a {
 .courses__control {
     justify-content: flex-end;
     margin-top: 30px;
+    margin-right: 10px;
 }
 
 .control__left, .control__right {

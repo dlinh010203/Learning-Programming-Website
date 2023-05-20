@@ -57,30 +57,14 @@
                             </li>
                         </ul>
                     </nav>
-                    <a href="#!" class="header__action">
-                        <svg
-                            width="15"
-                            height="20"
-                            viewBox="0 0 15 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M7.1466 8.96416C7.05493 8.95499 6.94493 8.95499 6.8441 8.96416C4.66243 8.89083 2.92993 7.10333 2.92993 4.90333C2.92993 2.65749 4.74493 0.833328 6.99993 0.833328C9.24576 0.833328 11.0699 2.65749 11.0699 4.90333C11.0608 7.10333 9.32826 8.89083 7.1466 8.96416Z"
-                                stroke="currentcolor"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M2.56341 12.3467C0.345075 13.8317 0.345075 16.2517 2.56341 17.7275C5.08424 19.4142 9.21841 19.4142 11.7392 17.7275C13.9576 16.2425 13.9576 13.8225 11.7392 12.3467C9.22758 10.6692 5.09341 10.6692 2.56341 12.3467Z"
-                                stroke="currentcolor"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
-                        </svg>
-                    </a>
+                    <div href="#!" class="header__action">
+                        <a class="header-action__login" href="#!"
+                            ><i class="fa-regular fa-user"></i
+                        ></a>
+                        <a href="#!" class="header-action__cart"
+                            ><i class="fa-solid fa-cart-shopping"></i
+                        ></a>
+                    </div>
                     <div class="header__search">
                         <input
                             type="text"
@@ -414,190 +398,197 @@
                     </section>
                     <div class="courses__list">
                         <section class="courses__item">
-                            <figure class="courses-item__wrap-img">
-                                <img
-                                    src="./assets/img/courses-01.jpg"
-                                    alt="Basic web design"
-                                    class="courses-item__img"
-                                />
-                            </figure>
-                            <div class="courses__infor">
-                                <div class="courses-item__star-group">
+                            <a href="#!">
+                                <figure class="courses-item__wrap-img">
                                     <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
+                                        src="./assets/img/courses-01.jpg"
+                                        alt="Basic web design"
+                                        class="courses-item__img"
                                     />
-                                    <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
-                                    />
-                                    <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
-                                    />
-                                    <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
-                                    />
-                                    <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
-                                    />
-                                    <span class="courses-item__label"
-                                        >(1 rating)</span
-                                    >
-                                </div>
-                                <h3 class="courses-item__heading">
-                                    Basic Web Design
-                                </h3>
-                                <p class="courses-item__desc">
-                                    Learn web design from basic to advanced
-                                </p>
-                                <div class="courses-item__seperate"></div>
-                                <div class="courses-item__row">
-                                    <div class="course-item__stats">
-                                        <i class="fa-solid fa-user"></i>
+                                </figure>
+                                <div class="courses__infor">
+                                    <div class="courses-item__star-group">
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
                                         <span class="courses-item__label"
-                                            >25 Students</span
+                                            >(1 rating)</span
                                         >
                                     </div>
-                                    <div class="course-item__stats">
-                                        <i class="fa-solid fa-file"></i>
-                                        <span class="courses-item__label"
-                                            >6 Lessons</span
-                                        >
+                                    <h3 class="courses-item__heading">
+                                        Basic Web Design
+                                    </h3>
+                                    <p class="courses-item__desc">
+                                        Learn web design from basic to advanced
+                                    </p>
+                                    <div class="courses-item__seperate"></div>
+                                    <div class="courses-item__row">
+                                        <div class="course-item__stats">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span class="courses-item__label"
+                                                >25 Students</span
+                                            >
+                                        </div>
+                                        <div class="course-item__stats">
+                                            <i class="fa-solid fa-file"></i>
+                                            <span class="courses-item__label"
+                                                >6 Lessons</span
+                                            >
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </section>
                         <section class="courses__item">
-                            <figure class="courses-item__wrap-img">
-                                <img
-                                    src="./assets/img/courses-02.png"
-                                    alt=""
-                                    class="courses-item__img"
-                                />
-                            </figure>
-                            <div class="courses__infor">
-                                <div class="courses-item__star-group">
+                            <a href="#!">
+                                <figure class="courses-item__wrap-img">
                                     <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
+                                        src="./assets/img/courses-02.png"
+                                        alt=""
+                                        class="courses-item__img"
                                     />
-                                    <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
-                                    />
-                                    <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
-                                    />
-                                    <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
-                                    />
-                                    <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
-                                    />
-                                    <span class="courses-item__label"
-                                        >(1 rating)</span
-                                    >
-                                </div>
-                                <h3 class="courses-item__heading">
-                                    Machine Learning For Beginer
-                                </h3>
-                                <p class="courses-item__desc">
-                                    Machine learning course for beginners
-                                </p>
-                                <div class="courses-item__seperate"></div>
-                                <div class="courses-item__row">
-                                    <div class="course-item__stats">
-                                        <i class="fa-solid fa-user"></i>
+                                </figure>
+                                <div class="courses__infor">
+                                    <div class="courses-item__star-group">
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
                                         <span class="courses-item__label"
-                                            >25 Students</span
+                                            >(1 rating)</span
                                         >
                                     </div>
-                                    <div class="course-item__stats">
-                                        <i class="fa-solid fa-file"></i>
-                                        <span class="courses-item__label"
-                                            >6 Lessons</span
-                                        >
+                                    <h3 class="courses-item__heading">
+                                        Machine Learning For Beginer
+                                    </h3>
+                                    <p class="courses-item__desc">
+                                        Machine learning course for beginners
+                                    </p>
+                                    <div class="courses-item__seperate"></div>
+                                    <div class="courses-item__row">
+                                        <div class="course-item__stats">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span class="courses-item__label"
+                                                >25 Students</span
+                                            >
+                                        </div>
+                                        <div class="course-item__stats">
+                                            <i class="fa-solid fa-file"></i>
+                                            <span class="courses-item__label"
+                                                >6 Lessons</span
+                                            >
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </section>
+
                         <section class="courses__item">
-                            <figure class="courses-item__wrap-img">
-                                <img
-                                    src="./assets/img/courses-03.jpg"
-                                    alt=""
-                                    class="courses-item__img"
-                                />
-                            </figure>
-                            <div class="courses__infor">
-                                <div class="courses-item__star-group">
+                            <a href="#!">
+                                <figure class="courses-item__wrap-img">
                                     <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
+                                        src="./assets/img/courses-03.jpg"
+                                        alt=""
+                                        class="courses-item__img"
                                     />
-                                    <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
-                                    />
-                                    <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
-                                    />
-                                    <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
-                                    />
-                                    <img
-                                        src="./assets/icon/star.svg"
-                                        alt="star"
-                                        class="courses-item__star"
-                                    />
-                                    <span class="courses-item__label"
-                                        >(1 rating)</span
-                                    >
-                                </div>
-                                <h3 class="courses-item__heading">
-                                    UX/UI Design
-                                </h3>
-                                <p class="courses-item__desc">
-                                    Learn web design from basic to advanced
-                                </p>
-                                <div class="courses-item__seperate"></div>
-                                <div class="courses-item__row">
-                                    <div class="course-item__stats">
-                                        <i class="fa-solid fa-user"></i>
+                                </figure>
+                                <div class="courses__infor">
+                                    <div class="courses-item__star-group">
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt="star"
+                                            class="courses-item__star"
+                                        />
                                         <span class="courses-item__label"
-                                            >25 Students</span
+                                            >(1 rating)</span
                                         >
                                     </div>
-                                    <div class="course-item__stats">
-                                        <i class="fa-solid fa-file"></i>
-                                        <span class="courses-item__label"
-                                            >6 Lessons</span
-                                        >
+                                    <h3 class="courses-item__heading">
+                                        UX/UI Design
+                                    </h3>
+                                    <p class="courses-item__desc">
+                                        Learn web design from basic to advanced
+                                    </p>
+                                    <div class="courses-item__seperate"></div>
+                                    <div class="courses-item__row">
+                                        <div class="course-item__stats">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span class="courses-item__label"
+                                                >25 Students</span
+                                            >
+                                        </div>
+                                        <div class="course-item__stats">
+                                            <i class="fa-solid fa-file"></i>
+                                            <span class="courses-item__label"
+                                                >6 Lessons</span
+                                            >
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </section>
                     </div>
                     <div class="courses__control control">
