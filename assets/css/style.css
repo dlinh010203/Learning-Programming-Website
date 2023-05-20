@@ -12,7 +12,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    color: #c9d2da;
+    color: #9da6a5;
     line-height: 1.5;
     font-family: "Poppins", sans-serif;
     text-rendering: optimizeLegibility;
@@ -66,8 +66,7 @@ a {
     column-gap: 10px
 }
 
-.heading {
-}
+
 
 /* Header */
 
@@ -216,7 +215,8 @@ a {
 
 .hero__desc {
     width: 500px;
-    font-weight: 400;
+    font-weight: 500;
+    line-height: 1.67;
     color: #c9d2da;
     margin-top: 30px;
 }
