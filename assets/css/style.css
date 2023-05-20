@@ -504,14 +504,6 @@ button {
     border-color: var(--primary-color);
 }
 
-.features__item:nth-child(2) {
-    transform: translateY(-40px);
-}
-
-.features__item:nth-child(2):hover {
-    transform: translateY(-50px);
-}
-
 .features-item__icon {
     display: flex;
     justify-content: center;
@@ -887,7 +879,7 @@ button {
 
 .features-02 {
     margin-top: 100px;
-    padding: 100px;
+    padding: 100px 0 50px;
 }
 
 .features-02__inner {
@@ -957,7 +949,6 @@ button {
 /* Blogs */
 
 .blogs {
-    margin-top: 100px;
     padding: 100px;
 }
 
