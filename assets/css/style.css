@@ -244,6 +244,7 @@ a {
     border: none;
     outline: none;
     background: transparent;
+    cursor: pointer;
 }
 .hero-watch-video__icon {
     display: flex;
@@ -711,4 +712,110 @@ a {
 .control__left:hover, .control__right:hover {
     background: var(--primary-color);
     color: #fff;
+}
+
+/* Feedback */
+
+.feedback {
+    background: #67a1e5;
+    margin-top: 100px;
+    padding: 100px 0;
+}
+
+.feedback__heading {
+    position: relative;
+    text-align: center;
+}
+
+.feedback__heading::after {
+    position: absolute;
+    bottom: -22px;
+    right: 50%;
+    transform: translateX(50%);
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background: #fff;
+}
+
+.feedback__title {
+    text-align: center;
+    color: #fff;
+}
+.feedback__list {
+    display: grid;
+    column-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 100px;
+}
+
+.feedback__item {
+    background: #fff;
+    box-shadow: 0px 30px 40px rgba(3, 18, 32, 0.06);
+    padding: 40px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.feedback__item:hover {
+    transform: translateY(-50px);
+}
+
+.feedback__item:hover .feedback-item__open-quotes {
+    rotate: 180deg;
+}
+
+.feedback-item__open-quotes {
+    text-align: center;
+    transition: .3s;
+}
+
+.feedback-item__content {
+    font-style: italic;
+    text-align: center;
+    color: #9da6a5;
+    line-height: 1.7;    
+    margin-top: 30px; 
+}
+
+.feedbacl-item__avatar {
+    display: block;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: 30px auto 0 auto;
+}
+
+.feedback-item__infor-name {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+    margin-top: 20px;
+}
+
+.feedback-item__infor-job {
+    text-align: center;
+    color: #555555;
+    font-weight: 400;
+}
+
+.feedback__dots-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.feedback__dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #fff
+}
+
+.feedback__dot--action {
+    background: orange;
 }
