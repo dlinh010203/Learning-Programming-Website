@@ -36,6 +36,12 @@ a {
     margin: 0 auto;
 }
 
+.heading-lv2 {
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: #000;
+}
+
 .btn {
     display: inline-block;
     min-width: 170px;
@@ -51,6 +57,9 @@ a {
 .btn:hover {
     background: #0c3b71;
     border-color: transparent;
+}
+
+.heading {
 }
 
 /* Header */
@@ -438,9 +447,6 @@ a {
 }
 
 .features__heading {
-    font-weight: 700;
-    font-size: 4.5rem;
-    color: #000;
 }
 
 .features__desc {
@@ -448,8 +454,6 @@ a {
     font-weight: 500;
     margin-top: 20px;
     color: #9da6a5;
-}
-.features__inner {
 }
 
 .features__list {
@@ -464,7 +468,7 @@ a {
     padding: 45px 40px;
     border: 16px solid #76a9e5;
     border-radius: 50%;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .features__item:hover {
@@ -517,8 +521,6 @@ a {
     color: #fff;
 }
 
-
-
 .features-item__heading {
     white-space: nowrap;
     font-size: 2rem;
@@ -530,4 +532,83 @@ a {
 .features-item__desc {
     color: #9da6a5;
     margin-top: 25px;
+}
+
+/* Courses */
+
+.courses__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses__desc {
+    max-width: 500px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #9da6a5;
+}
+
+.courses__link {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.courses__link:hover {
+    text-decoration: underline;
+}
+
+.courses__link::before {
+    position: absolute;
+    top: 9px;
+    right: -12px;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-top: 2px solid var(--primary-color);
+    border-left: 2px solid var(--primary-color);
+    rotate: 135deg;
+}
+.courses__link::after {
+    position: absolute;
+    top: 9px;
+    right: -17px;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-top: 2px solid var(--primary-color);
+    border-left: 2px solid var(--primary-color);
+    rotate: 135deg;
+}
+
+.courses__list {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.courses-item__wrap-img {
+    width: 370px;
+    height: 278px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.courses-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.courses__infor {
+    padding: 20px;
 }
