@@ -938,12 +938,16 @@ button {
     min-width: 130px;
     font-weight: 500;
     text-align: center;
+    color: #0c3b71;
+    background: transparent;
+    border: 3px solid #0c3b71;
     padding: 10px 0;
     margin-top: 30px;
 }
 
 .features-02__btn:hover {
-    color: #000
+    color: #fff;
+    background: #0c3b71;
 }
 
 /* Blogs */
@@ -1018,7 +1022,7 @@ button {
 .footer {
     color: #c9d2da;
     margin-top: 100px;
-    padding: 100px 0;
+    padding: 100px 0 30px;
     background: var(--primary-color);
 }
 
@@ -1126,4 +1130,16 @@ button {
     background: #0c3b71;
     border: none;
     outline: none;
+}
+
+.footer__seperate {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    margin-top: 50px;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 30px;
 }
