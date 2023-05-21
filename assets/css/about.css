@@ -226,6 +226,7 @@ button {
 
 .breadcrumb {
     display: flex;
+    justify-content: center;
     column-gap: 30px;
 }
 
@@ -254,7 +255,7 @@ button {
 }
 
 .breadcrumb__link:hover {
-    color: #000;
+    color: var(--primary-color);
 }
 
 /* About */

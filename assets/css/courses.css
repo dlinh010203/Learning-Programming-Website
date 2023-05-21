@@ -223,6 +223,7 @@ button {
 
 .breadcrumb {
     display: flex;
+    justify-content: center;
     column-gap: 30px;
 }
 
@@ -251,7 +252,7 @@ button {
 }
 
 .breadcrumb__link:hover {
-    color: #000;
+    color: var(--primary-color);
 }
 
 /* Courses Area*/
@@ -355,7 +356,7 @@ button {
 .courses-item__seperate {
     width: 100%;
     height: 2px;
-    background: #f6f6f6;
+    background: #f1f1f1;
     margin-top: 16px;
 }
 
@@ -376,19 +377,13 @@ button {
     color: var(--primary-color);
 }
 
-.courses__search {
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-}
-
 .courses__search-form {
     display: flex;
     column-gap: 10px;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 6px;
-    background: #f1f1f1;
+    padding: 16px 8px;
+    background: #fff;
     border-radius: 10px;
 }
 
@@ -396,7 +391,7 @@ button {
     font-size: 1.6rem;
     border: none;
     outline: none;
-    background: #f1f1f1;
+    background: #fff;
 }
 .courses__search-btn {
     padding: 10px 16px;
@@ -433,6 +428,30 @@ button {
 .courses-sidebar__input {
     width: 16px;
     height: 16px;
+}
+
+.courses__control {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px
+}
+
+.courses-control__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border: 1px solid #c9d2da;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.courses-control__item:hover {
+    background: var(--primary-color);
+    color: #fff;
 }
 
 /* Footer */
