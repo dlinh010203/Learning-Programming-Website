@@ -306,7 +306,7 @@ button {
 
 .lecturers__inner::before {
     position: absolute;
-    right: 0;
+    right: -7px;
     top: 330px;
     content: "";
     display: inline-block;
@@ -320,7 +320,7 @@ button {
 
 .lecturers__inner::after {
     position: absolute;
-    left: -24px;
+    left: -34px;
     top: 330px;
     content: "";
     display: inline-block;
