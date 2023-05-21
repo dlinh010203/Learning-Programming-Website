@@ -307,8 +307,7 @@ button {
 .lecturers__inner::before {
     position: absolute;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 330px;
     content: "";
     display: inline-block;
     width: 30px;
@@ -321,16 +320,15 @@ button {
 
 .lecturers__inner::after {
     position: absolute;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: -24px;
+    top: 330px;
     content: "";
     display: inline-block;
     width: 30px;
     height: 30px;
     border-top: 3px solid #fff;
     border-left: 3px solid #fff;
-    rotate: 135deg;
+    rotate: -45deg;
     z-index: 2;
 }
 
@@ -340,7 +338,6 @@ button {
 
 .lecturers__list {
     position: relative;
-    display: grid;
     display: flex;
     column-gap: 20px;
     margin-top: 50px;
@@ -355,6 +352,12 @@ button {
 }
 
  
+.lecturer-item__wrap-avatar {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+ 
 .lecturer-item__avatar {
     display: block;
     width: 100%;
@@ -362,6 +365,11 @@ button {
     object-fit: cover;
     object-position: center;
     border-radius: 12px 12px 0 0;
+    transition: .3s;
+}
+
+.lecturer__item:hover .lecturer-item__avatar {
+    transform: scale(1.1);
 }
 
 .lecturer-item__infor {
@@ -408,7 +416,7 @@ button {
 /* Feedback */
 
 .feedback {
-    background: #67a1e5;
+    background: #fff;
     padding: 100px 0;
 }
 
@@ -426,7 +434,7 @@ button {
     display: inline-block;
     width: 50px;
     height: 3px;
-    background: #fff;
+    background: #000;
 }
 
 .feedback__title {
@@ -505,7 +513,8 @@ button {
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background: #fff;
+    background: transparent;
+    border: 1px solid #575f66;
 }
 
 .feedback__dot--action {
