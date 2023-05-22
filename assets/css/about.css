@@ -106,6 +106,10 @@ button {
     margin-left: 50px;
 }
 
+.nav__item {
+    position: relative;
+}
+
 .nav__link {
     display: inline-block;
     font-size: 1.4rem;
@@ -146,6 +150,53 @@ button {
     border-top: 2px solid #c9d2da;
     border-left: 2px solid #c9d2da;
     rotate: -135deg;
+}
+
+.nav__courses {
+    display: none;
+    transition: .3s;
+}
+
+.nav__courses:hover + .nav__link--action {
+    font-weight: 700;
+}
+
+.nav__item--action:hover .nav__courses{
+    display: block;
+}
+
+
+.nav-courses__list {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    position: absolute;
+    top: 60px;
+    left: 18px;
+    background: #fff;
+    border-radius: 6px;
+    transition: .3s;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.nav-courses__item {
+    transition: .3s;
+}
+.nav-courses__item:hover {
+    background: #c9d2da;
+}
+
+.nav-courses__item:first-child {
+   border-radius: 6px 6px 0 0;
+}
+.nav-courses__item:last-child {
+   border-radius: 0 0 6px 6px;
+}
+.nav-courses__link {
+    display: block;
+    color: #555555;
+    /* font-weight: 500; */
+    padding: 12px;
 }
 
 .header__action {
