@@ -211,6 +211,9 @@ button {
 .nav__courses {
     display: none;
     transition: .3s;
+    position: absolute;
+    top: 40px;
+    left: 18px;
 }
 
 .nav__courses:hover + .nav__link--action {
@@ -226,9 +229,6 @@ button {
     display: flex;
     flex-direction: column;
     width: 275px;
-    position: absolute;
-    top: 60px;
-    left: 18px;
     background: #fff;
     border-radius: 6px;
     transition: .3s;
