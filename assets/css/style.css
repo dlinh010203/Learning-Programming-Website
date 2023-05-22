@@ -741,32 +741,28 @@ button {
 /* Feedback */
 
 .feedback {
-    background: #67a1e5;
+    background: #f8f8f8;
     margin-top: 100px;
     padding: 100px 0;
 }
 
 .feedback__heading {
     position: relative;
-    text-align: center;
 }
 
 .feedback__heading::after {
     position: absolute;
     bottom: -22px;
-    right: 50%;
-    transform: translateX(50%);
+    left: 0;
     content: "";
     display: inline-block;
     width: 50px;
     height: 3px;
-    background: #fff;
+    background: #555555;
+    border-radius: 5px;
 }
 
-.feedback__title {
-    text-align: center;
-    color: #fff;
-}
+
 .feedback__list {
     display: grid;
     column-gap: 40px;
@@ -956,6 +952,10 @@ button {
 
 .blogs {
     padding: 100px;
+}
+
+.blogs__title {
+    text-align: center;
 }
 
 .blogs__heading {

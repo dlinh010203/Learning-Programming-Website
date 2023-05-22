@@ -444,6 +444,12 @@ button {
     color: #0c3b71
 }
 
+.map {
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
 /* Footer */
 
 .footer {

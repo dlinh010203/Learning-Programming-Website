@@ -297,7 +297,7 @@ button {
 /* Lectures */
 
 .lecturers {
-    background: #67a1e5;
+    background: #f8f8f8;
     padding: 100px;
 }
 
@@ -307,28 +307,28 @@ button {
 
 .lecturers__inner::before {
     position: absolute;
-    right: -7px;
-    top: 330px;
+    right: -25px;
+    top: 297px;
     content: "";
     display: inline-block;
     width: 30px;
     height: 30px;
-    border-top: 3px solid #fff;
-    border-left: 3px solid #fff;
+    border-top: 3px solid #555555;
+    border-left: 3px solid #555555;
     rotate: 135deg;
     z-index: 2;
 }
 
 .lecturers__inner::after {
     position: absolute;
-    left: -34px;
-    top: 330px;
+    left: -50px;
+    top: 297px;
     content: "";
     display: inline-block;
     width: 30px;
     height: 30px;
-    border-top: 3px solid #fff;
-    border-left: 3px solid #fff;
+    border-top: 3px solid #555555;
+    border-left: 3px solid #555555;
     rotate: -45deg;
     z-index: 2;
 }
@@ -362,9 +362,9 @@ button {
 .lecturer-item__avatar {
     display: block;
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
-    object-position: center;
+    object-position:  center;
     border-radius: 12px 12px 0 0;
     transition: .3s;
 }
@@ -376,7 +376,7 @@ button {
 .lecturer-item__infor {
     background: #fff;
     text-align: center;
-    padding: 30px 8px;
+    padding: 16px 8px 30px;
     border-radius: 0 0 12px 12px;
 }
 
@@ -387,6 +387,7 @@ button {
 }
 
 .lecturer__job {
+    font-size: 1.4rem;
     margin-top: 12px;
 }
 
@@ -401,18 +402,23 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
-    border: 1px solid var(--primary-color);
-    border-radius: 50%; 
-    color: var(--primary-color);
+    width: 30px;
+    height: 30px;
+    background: var(--primary-color);
+    border-radius: 3px; 
+    transition: .3s;
+}
+
+.social__icon i {
+    color: #fff;
     transition: .3s;
 }
 
 .social__icon:hover {
-    color: #fff;
-    background: var(--primary-color);
+    background: #0c3b71;
 }
+
+
 
 /* Feedback */
 
@@ -423,14 +429,13 @@ button {
 
 .feedback__heading {
     position: relative;
-    text-align: center;
 }
 
 .feedback__heading::after {
     position: absolute;
     bottom: -22px;
-    right: 50%;
-    transform: translateX(50%);
+    left: 0;
+    
     content: "";
     display: inline-block;
     width: 50px;
@@ -438,10 +443,6 @@ button {
     background: #000;
 }
 
-.feedback__title {
-    text-align: center;
-    color: #fff;
-}
 .feedback__list {
     display: grid;
     row-gap: 70px;
@@ -514,8 +515,7 @@ button {
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background: transparent;
-    border: 1px solid #575f66;
+    background: #fff;
 }
 
 .feedback__dot--action {
