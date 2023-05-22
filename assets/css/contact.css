@@ -76,7 +76,6 @@ button {
 .header {
     position: sticky;
     top: 0;
-    padding: 10px 0;
     background: var(--primary-color);
     z-index: 3;
 }
@@ -107,6 +106,7 @@ button {
 
 .nav__item {
     position: relative;
+    padding: 10px 0;
 }
 
 .nav__link {
@@ -212,8 +212,9 @@ button {
     display: none;
     transition: .3s;
     position: absolute;
-    top: 40px;
-    left: 18px;
+    top: 60px;
+    left: 10px;
+
 }
 
 .nav__courses:hover + .nav__link--action {
