@@ -423,6 +423,7 @@ button {
     width: 45px;
     height: 45px;
     text-align: center;
+    color: #000;
     border: 1px solid #c9d2da;
     border-radius: 6px;
     transition: .3s;
