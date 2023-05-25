@@ -110,7 +110,6 @@ a {
 
 .form__group {
     position: relative;
-    padding: 12px 6px;
     margin-top: 30px;
     border: 2px solid #c9d2da;
     border-radius: 6px;
@@ -126,6 +125,8 @@ a {
 }
 
 .form__input {
+    padding: 12px 6px;
+
     width: 90%;
     font-size: 1.6rem;
     background: transparent;
