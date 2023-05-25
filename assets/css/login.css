@@ -267,6 +267,10 @@ a {
     border: 1px solid #c9d2da;
 }
 
+.form__icon-social:hover {
+    opacity: 0.6;
+}
+
 /* Footer */
 
 .footer {
