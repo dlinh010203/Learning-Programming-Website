@@ -46,7 +46,7 @@ a {
 }
 
 .login {
-    background: #2073d4;
+    background: #f8f8f8;
 
     padding: 15px 0;
 }
@@ -62,7 +62,7 @@ a {
     display: flex;
     padding-top: 100px;
     justify-content: center;
-    background: transparent ;
+    background: #2073d4 ;
     border-radius: 12px 0 0 12px;
 }
 
