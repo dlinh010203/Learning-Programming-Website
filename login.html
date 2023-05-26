@@ -50,19 +50,21 @@
                             >
                         </div>
                         <img src="./assets/img/login-img.svg" alt="" class="login__img">
-                        <p href="#!" class="login__callout">Don't have an account? <a class="login__callout-link" href="">Click here</a></p>
+                        <p class="login__callout">Don't have an account? <a class="login__callout-link" href="./signup.html">Click here</a></p>
                     </figure>
                     <form class="login__form">
                         <h2 class="login-form__heading">Hello,<br>Welcome back</h2>
                         <p class="login-form__desc">Please login to continue</p>
                         <div class="form__group">
-                            <input required type="email" class="form__input" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <input required type="email" id="email" class="form__input" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <label for="email" class="form__label">Email</label>
                             <span class="form__icon">
                                 <i class="fa-solid fa-user"></i>
                             </span>
                         </div>
                         <div class="form__group">
-                            <input required type="password" class="form__input" placeholder="Password" minlength="8">
+                            <input required type="password" id="password" class="form__input" placeholder="Password" minlength="8">
+                            <label for="password" class="form__label">Passwork</label>
                             <span class="form__icon">
                                 <i class="fa-solid fa-lock"></i></i>
                             </span>
@@ -70,7 +72,7 @@
                         <div class="form__row">
                             <div class="form__group">
                                 <input  type="checkbox" name="" id="checkbox">
-                                <label for="checkbox" class="form__label">Remember</label>
+                                <label for="checkbox" class="form__label-checkbox">Remember</label>
                             </div>
                             <a href="" class="form__forgot">Fogot Password?</a>
                         </div>

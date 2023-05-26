@@ -16,7 +16,7 @@ body {
     line-height: 1.5;
     color: var(--primary-color);
     font-weight: 400;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizeSpeed;
    -webkit-font-smoothing: antialiased;
    -moz-font-smoothing: antialiased;
 }
@@ -111,28 +111,57 @@ a {
 .form__group {
     position: relative;
     margin-top: 30px;
-    border: 2px solid #c9d2da;
-    border-radius: 6px;
     transition: .3s;
 }
 
-.form__group:hover {
-    border-color: var(--primary-color);
-}
 
 .form__group:first-of-type {
     margin-top: 50px;
 }
 
+.form__label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    color: #c9d2da;
+    transition: .3s;
+    background: #fff;
+}
+
+/* Vì mặc định background là transparent nên có xin z-index cũng thế thôi */
+
 .form__input {
     padding: 12px 6px;
-
-    width: 90%;
+    width: 100%;
     font-size: 1.6rem;
     background: transparent;
     border: none;
+    border: 2px solid #c9d2da;
+    border-radius: 6px;
     outline: none;
-    
+}
+
+.form__input::placeholder {
+    visibility: hidden;
+}
+
+.form__input:focus + .form__label {
+    top: 0;
+    color: var(--primary-color)
+}
+
+.form__input:focus {
+    border-color: var(--primary-color);
+}
+
+.form__input:not(:placeholder-shown) + .form__label{
+    top: 0;
+    color: var(--primary-color)
+}
+
+.form__input:not(:placeholder-shown) {
+    border-color: var(--primary-color);
 }
 
 .fa-user,
@@ -167,11 +196,11 @@ a {
 }
 
 
-[type="checkbox"]:checked + .form__label::before {
+[type="checkbox"]:checked + .form__label-checkbox::before {
     background: var(--primary-color);
 }
 
-.form__label::before {
+.form__label-checkbox::before {
     position:relative;
     left: 0;
     top: 10px;
@@ -186,7 +215,7 @@ a {
 }
 
 
-.form__label::after {
+.form__label-checkbox::after {
     position: absolute;
     top: 1px;
     left: 4px; 
@@ -200,7 +229,7 @@ a {
     display: none;
 }
 
-[type="checkbox"]:checked + .form__label::after {
+[type="checkbox"]:checked + .form__label-checkbox::after {
     display: block;
 }
 .form__forgot {
