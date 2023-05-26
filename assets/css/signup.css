@@ -53,7 +53,7 @@ a {
 
 .sign-up__form {
     background: #fff;
-    padding: 50px;
+    padding: 45px 50px;
     border-radius: 12px 0 0 12px;
 }
 
@@ -157,7 +157,7 @@ a {
 }
 
 .sign-form__btn {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
     font-size: 1.6rem;
     font-weight: 600;
@@ -179,7 +179,7 @@ a {
 
 .sign-up__wrap-img {
     position: relative;
-    padding: 100px 0 75px;
+    padding: 100px 0 50px;
     background-color: #2073d4;
     border-radius: 0 12px 12px 0;
 }
@@ -216,6 +216,7 @@ a {
     text-decoration: underline;
 }
 .form__login-with {
+    line-height: 1;
     color: #c9d2da;
     margin-top: 20px;
     display: flex;
