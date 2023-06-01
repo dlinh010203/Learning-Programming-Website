@@ -79,6 +79,7 @@ a {
 .form__input {
     width: 100%;
     border: none;
+    background: #fff;
     font-size: 1.6rem;
     padding: 12px 6px;
     border: 1px solid var(--color-label);

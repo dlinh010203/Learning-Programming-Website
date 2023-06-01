@@ -457,6 +457,7 @@ button {
     border: 1px solid #c9d2da;
     outline: none;
     margin-top: 10px;
+    border-radius: 8px;
 }
 
 .form__input::placeholder,
@@ -482,6 +483,7 @@ button {
     outline: none;
     border: 1px solid #c9d2da;
     margin-top: 10px;
+    border-radius: 8px;
 }
 
 .form__btn {
