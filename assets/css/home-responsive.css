@@ -5,7 +5,7 @@
     }
 }
 
-/* Tablet & menu */
+/* Tablet & Mobile */
 @media screen and (max-width: 992px) {
     /* Header */
     .header {
@@ -54,7 +54,7 @@
         position: fixed;
         background: #fff;
         inset: 0 0 0 40%;
-        z-index: 2;
+        z-index: 3;
         padding: 42px;
         transform: translateX(100%);
         transition: 0.5s ease;
@@ -244,6 +244,7 @@
 
 /* Tablet  */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    
     .hero__heading {
         font-size: 42px;
     }
@@ -317,6 +318,9 @@
 /* menu */
 @media screen and (max-width: 767px) {
     /* Header */
+    .header {
+        padding: 6px 0;
+    }
     .header__inner {
         display: flex;
         justify-content: space-between;
