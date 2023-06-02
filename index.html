@@ -257,7 +257,7 @@
                 </div>
             </div>
         </header>
-        <!-- Header tablet & menu -->
+        <!-- Header tablet & mobile -->
         <div class="menu-header">
             <input
                 type="checkbox"
@@ -280,7 +280,7 @@
                     <input type="text" class="menu-search__input" placeholder="Search...">
                     <span class="menu-search__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
                 </form>
-                <div class="seperate"></div>
+                <div class="seperate tablet-seperate"></div>
                 <nav class="menu-navbar">
                     <ul class="menu-navbar__list">
                         <li class="menu-navbar__item">
@@ -493,11 +493,12 @@
                 </div>
             </div>
         </section>
-        <main class="main-content" hidden>
+        <main class="main-content">
             <!-- Features -->
             <section class="features">
                 <div class="container">
-                    <p class="feature__">F E A T U R E S</p>
+                    <p class="feature__label">F E A T U R E S</p>
+                    <div class="features__inner">
                     <section class="features__content">
                         <h2 class="features__heading heading-lv2">
                             More then just learning
@@ -507,7 +508,6 @@
                             you. Explore the feature and know the best.
                         </p>
                     </section>
-                    <div class="features__inner">
                         <div class="features__list">
                             <div class="features__item">
                                 <div class="features-item__icon">
@@ -1094,6 +1094,7 @@
                                 class="feedback__dot feedback__dot--action"
                             ></span>
                             <span class="feedback__dot"></span>
+                            <span class="feedback__dot"></span>
                         </div>
                     </div>
                 </div>
@@ -1324,7 +1325,7 @@
             </section>
         </main>
         <!-- Footer -->
-        <footer class="footer" style="display: none">
+        <footer class="footer" >
             <div class="container">
                 <div class="footer__row">
                     <div class="footer_column">
