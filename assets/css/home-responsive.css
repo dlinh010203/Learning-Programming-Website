@@ -9,7 +9,7 @@
 @media screen and (max-width: 992px) {
     /* Header */
     .header {
-        padding: 16px 0;
+        padding: 4px 0;
     }
 
     .header__search {
@@ -190,16 +190,18 @@
         left: 50%;
         transform: translateX(-50%);
     }
-
-    .feedback__item {
-        box-shadow: 0px 30px 40px rgba(3, 18, 32, -0.94);
-    }
-
     .feedback__list {
         grid-template-columns: repeat(3, 50%);
         justify-content: center;
         gap: 20px;
     }
+    .feedback__item {
+        box-shadow: 0px 30px 40px rgba(3, 18, 32, 0.05);
+    }
+    .feedback__item:hover {
+        transform: translateY(0);
+    }
+   
 
     /* Stats */
 
@@ -318,9 +320,6 @@
 /* menu */
 @media screen and (max-width: 767px) {
     /* Header */
-    .header {
-        padding: 6px 0;
-    }
     .header__inner {
         display: flex;
         justify-content: space-between;
