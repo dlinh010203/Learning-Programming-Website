@@ -96,6 +96,7 @@ button {
     color: #fff;
     font-weight: 700;
     text-align: center;
+    white-space: nowrap;
 }
 
 .nav {

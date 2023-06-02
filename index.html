@@ -1,27 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LightKey Education</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./assets/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -37,8 +95,9 @@
         />
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/home-responsive.css" />
     </head>
-    <body>
+    <body style="height: 1000px;">
         <!-- Header -->
         <header class="header">
             <div class="container">
@@ -183,9 +242,155 @@
                             </svg>
                         </button>
                     </div>
+                    <label for="menu-checkbox" class="toogle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                fill="currentcolor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
                 </div>
             </div>
         </header>
+        <!-- Header tablet & menu -->
+        <div class="menu-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <div class="hide-on-pc menu-drawer">
+                <div class="logo">
+                    <span class="logo__text">
+                        <span class="logo__branch"
+                            >LightKey <span style="color: orange">.</span></span
+                        >
+                    </span>
+                </div>
+                <label for="menu-checkbox" class="menu-close"><i class="fa-solid fa-xmark"></i></label>
+                <form class="menu-search-form">
+                    <input type="text" class="menu-search__input" placeholder="Search...">
+                    <span class="menu-search__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </form>
+                <div class="seperate"></div>
+                <nav class="menu-navbar">
+                    <ul class="menu-navbar__list">
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./index.html"
+                                class="menu-navbar__link"
+                                title="Home"
+                                ><i class="fa-solid fa-house"></i> Home</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./about.html"
+                                class="menu-navbar__link"
+                                title="About"
+                                ><i class="fa-solid fa-address-card"></i>
+                                About</a
+                            >
+                        </li>
+                        <li
+                            class="menu-navbar__item menu-navbar__item--action"
+                        >
+                            <!-- <nav class="menu-navbar__courses" hidden>
+                                <ul class="menu-navbar-courses__list">
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Basic web design</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Machine learning for
+                                            beginner</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >UX/UI Design</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >C++</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Java</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Python</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav> -->
+                            <a
+                                href="./courses.html"
+                                class="menu-navbar__link menu-navbar__link--action"
+                                title="Courses"
+                                ><i class="fa-solid fa-chalkboard-user"></i>
+                                Courses</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./blogs.html"
+                                class="menu-navbar__link"
+                                title="Blogs"
+                                ><i class="fa-brands fa-blogger-b"></i> Blogs</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./contact.html"
+                                class="menu-navbar__link"
+                                title="Contact"
+                                ><i class="fa-solid fa-handshake"></i>
+                                Contact</a
+                            >
+                        </li>
+                        <div class="seperate"></div>
+                        <li class="menu-navbar__item">
+                            <a href="./contact.html" class="menu-navbar__link"
+                                >Sign in</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a href="./contact.html" class="menu-navbar__link"
+                                >Sign up</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
         <!-- Hero -->
         <section class="hero">
             <div class="container">
@@ -219,7 +424,7 @@
                                             <path
                                                 d="M14 9L0 0V18L14 9Z"
                                                 fill="
-                                                currentcolor"
+                                                    currentcolor"
                                             />
                                         </svg>
                                     </span>
@@ -243,10 +448,8 @@
                                 class="hero__img hero__img--small"
                             />
                         </div>
-
                         <div class="hero-summary__courses">
                             <div class="summary-courses__book"></div>
-
                             <span class="summary-label"
                                 >Courses<br />1000+</span
                             >
@@ -290,810 +493,838 @@
                 </div>
             </div>
         </section>
-        <!-- Features -->
-        <section class="features">
-            <div class="container">
-                <p class="feature__">F E A T U R E S</p>
-                <section class="features__content">
-                    <h2 class="features__heading heading-lv2">
-                        More then just learning
-                    </h2>
-                    <p class="features__desc">
-                        Read our awesome feature that is absolutely suit for
-                        you. Explore the feature and know the best.
-                    </p>
-                </section>
-                <div class="features__inner">
-                    <div class="features__list">
-                        <div class="features__item">
-                            <div class="features-item__icon">
-                                <svg
-                                    width="27"
-                                    height="27"
-                                    viewBox="0 0 27 27"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M26 13.9961V15.1656C26 19.8436 24.8875 21 20.45 21H6.55C2.1125 21 1 19.8305 1 15.1656V6.83443C1 2.16951 2.1125 1 6.55 1H8.5"
-                                        stroke="currentcolor"
-                                        stroke-width="1.6"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M13.5 21.5V25.5"
-                                        stroke="currentcolor"
-                                        stroke-width="1.6"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M1 14.75H26"
-                                        stroke="currentcolor"
-                                        stroke-width="1.6"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M7.875 26H19.125"
-                                        stroke="currentcolor"
-                                        stroke-width="1.6"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M20.825 10.2127H14.875C13.15 10.2127 12.575 9.0627 12.575 7.9127V3.5127C12.575 2.1377 13.7 1.0127 15.075 1.0127H20.825C22.1 1.0127 23.125 2.0377 23.125 3.31269V7.9127C23.125 9.1877 22.1 10.2127 20.825 10.2127Z"
-                                        stroke="currentcolor"
-                                        stroke-width="1.6"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M24.6375 8.39985L23.125 7.33735V3.88735L24.6375 2.82485C25.3875 2.31235 26 2.62485 26 3.53735V7.69985C26 8.61235 25.3875 8.92485 24.6375 8.39985Z"
-                                        stroke="currentcolor"
-                                        stroke-width="1.6"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <h3 class="features-item__heading">
-                                Training from Experts
-                            </h3>
-                            <p class="features-item__desc">
-                                Learn from anywhere in the world on desktop
-                                mobile Phone with an Internet connection.
-                            </p>
-                        </div>
-                        <div class="features__item">
-                            <div class="features-item__icon">
-                                <svg
-                                    width="28"
-                                    height="27"
-                                    viewBox="0 0 28 27"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M11.4 19.746H6.47299C2.092 19.746 1 18.654 1 14.273V6.47299C1 2.092 2.092 1 6.47299 1H20.162C24.543 1 25.635 2.092 25.635 6.47299"
-                                        stroke="currentcolor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M11.3999 25.6218V19.7458"
-                                        stroke="currentcolor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M1 14.5459H11.4"
-                                        stroke="currentcolor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M7.16211 25.6218H11.4001"
-                                        stroke="currentcolor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M26.9999 14.3509V21.7739C26.9999 24.8549 26.2329 25.6219 23.152 25.6219H18.537C15.456 25.6219 14.689 24.8549 14.689 21.7739V14.3509C14.689 11.2699 15.456 10.5029 18.537 10.5029H23.152C26.2329 10.5029 26.9999 11.2699 26.9999 14.3509Z"
-                                        stroke="currentcolor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M20.8179 21.4359H20.8296"
-                                        stroke="currentcolor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <h3 class="features-item__heading">
-                                Over 1.1k Video Course
-                            </h3>
-                            <p class="features-item__desc">
-                                Learn from anywhere in the world on desktop
-                                mobile Phone with an Internet connection.
-                            </p>
-                        </div>
-                        <div class="features__item">
-                            <div class="features-item__icon">
-                                <svg
-                                    width="28"
-                                    height="28"
-                                    viewBox="0 0 28 28"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M14.6185 23.8234H7.24516C3.5585 23.8234 2.3335 21.3734 2.3335 18.9118V9.08842C2.3335 5.40176 3.5585 4.17676 7.24516 4.17676H14.6185C18.3052 4.17676 19.5302 5.40176 19.5302 9.08842V18.9118C19.5302 22.5984 18.2935 23.8234 14.6185 23.8234Z"
-                                        stroke="currentcolor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M22.7736 19.9502L19.5303 17.6752V10.3135L22.7736 8.03849C24.3603 6.93015 25.6669 7.60682 25.6669 9.55515V18.4452C25.6669 20.3935 24.3603 21.0702 22.7736 19.9502Z"
-                                        stroke="currentcolor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                    <path
-                                        d="M13.4165 12.8345C14.383 12.8345 15.1665 12.051 15.1665 11.0845C15.1665 10.118 14.383 9.33447 13.4165 9.33447C12.45 9.33447 11.6665 10.118 11.6665 11.0845C11.6665 12.051 12.45 12.8345 13.4165 12.8345Z"
-                                        stroke="currentcolor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <h3 class="features-item__heading">
-                                Occasional updates
-                            </h3>
-                            <p class="features-item__desc">
-                                Learn from anywhere in the world on desktop
-                                mobile Phone with an Internet connection.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Courses -->
-        <section class="courses">
-            <div class="container">
-                <div class="courses__innner">
-                    <p class="courses__title">C O U R S E S</p>
-                    <section class="courses__content">
-                        <div class="courses__text">
-                            <h2 class="courses__heading heading-lv2">
-                                Popular Courses
-                            </h2>
-                            <p class="courses__desc">
-                                Check out our most poular courses that suit for
-                                you. Here you can find your favourite one.
-                            </p>
-                        </div>
-                        <a href="#!" class="courses__link">View All Courses </a>
-                    </section>
-                    <div class="courses__list">
-                        <article class="courses__item">
-                            <span class="courses__price">$50.00</span>
-                            <a href="#!">
-                                <figure class="courses-item__wrap-img">
-                                    <img
-                                        src="./assets/img/courses-01.jpg"
-                                        alt="Basic web design"
-                                        class="courses-item__img"
-                                    />
-                                </figure>
-                                <section class="courses__infor">
-                                    <div class="courses-item__star-group">
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <span class="courses-item__label"
-                                            >(5 rating)</span
-                                        >
-                                    </div>
-                                    <h3 class="courses-item__heading">
-                                        Basic web design
-                                    </h3>
-                                    <p class="courses-item__desc">
-                                        Learn web design from basic to advanced
-                                    </p>
-                                    <div class="courses-item__seperate"></div>
-                                    <div class="courses-item__row">
-                                        <div class="course-item__stats">
-                                            <i class="fa-solid fa-user"></i>
-                                            <span class="courses-item__label"
-                                                >32 Students</span
-                                            >
-                                        </div>
-                                        <div class="course-item__stats">
-                                            <i class="fa-solid fa-file"></i>
-                                            <span class="courses-item__label"
-                                                >10 Lessons</span
-                                            >
-                                        </div>
-                                    </div>
-                                </section>
-                            </a>
-                        </article>
-                        <article class="courses__item">
-                            <span class="courses__price">$70.00</span>
-                            <a href="#!">
-                                <figure class="courses-item__wrap-img">
-                                    <img
-                                        src="./assets/img/courses-02.png"
-                                        alt=""
-                                        class="courses-item__img"
-                                    />
-                                </figure>
-                                <section class="courses__infor">
-                                    <div class="courses-item__star-group">
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <span class="courses-item__label"
-                                            >(9 rating)</span
-                                        >
-                                    </div>
-                                    <h3 class="courses-item__heading">
-                                        Machine learning for beginer
-                                    </h3>
-                                    <p class="courses-item__desc">
-                                        Machine learning course for beginners
-                                    </p>
-                                    <div class="courses-item__seperate"></div>
-                                    <div class="courses-item__row">
-                                        <div class="course-item__stats">
-                                            <i class="fa-solid fa-user"></i>
-                                            <span class="courses-item__label"
-                                                >18 Students</span
-                                            >
-                                        </div>
-                                        <div class="course-item__stats">
-                                            <i class="fa-solid fa-file"></i>
-                                            <span class="courses-item__label"
-                                                >15 Lessons</span
-                                            >
-                                        </div>
-                                    </div>
-                                </section>
-                            </a>
-                        </article>
-
-                        <article class="courses__item">
-                            <span class="courses__price">$45.00</span>
-                            <a href="#!">
-                                <figure class="courses-item__wrap-img">
-                                    <img
-                                        src="./assets/img/courses-03.jpg"
-                                        alt=""
-                                        class="courses-item__img"
-                                    />
-                                </figure>
-                                <section class="courses__infor">
-                                    <div class="courses-item__star-group">
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <img
-                                            src="./assets/icon/star.svg"
-                                            alt="star"
-                                            class="courses-item__star"
-                                        />
-                                        <span class="courses-item__label"
-                                            >(7 rating)</span
-                                        >
-                                    </div>
-                                    <h3 class="courses-item__heading">
-                                        UX/UI Design
-                                    </h3>
-                                    <p class="courses-item__desc">
-                                        Learn ux/ui design from zero to hero
-                                    </p>
-                                    <div class="courses-item__seperate"></div>
-                                    <div class="courses-item__row">
-                                        <div class="course-item__stats">
-                                            <i class="fa-solid fa-user"></i>
-                                            <span class="courses-item__label"
-                                                >40 Students</span
-                                            >
-                                        </div>
-                                        <div class="course-item__stats">
-                                            <i class="fa-solid fa-file"></i>
-                                            <span class="courses-item__label"
-                                                >12 Lessons</span
-                                            >
-                                        </div>
-                                    </div>
-                                </section>
-                            </a>
-                        </article>
-                    </div>
-                    <div class="courses__control control">
-                        <a href="#!" class="control__left">
-                            <svg
-                                width="6"
-                                height="12"
-                                viewBox="0 0 6 12"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M5.5 1L0.5 6L5.5 11"
-                                    stroke="currentcolor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </a>
-                        <a href="#!" class="control__right">
-                            <svg
-                                width="6"
-                                height="12"
-                                viewBox="0 0 6 12"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M0.5 1L5.5 6L0.5 11"
-                                    stroke="currentcolor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="feedback">
-            <div class="container">
-                <div class="feedback__inner">
-                    <section class="feedback__content">
-                        <p class="feedback__title">T E S T I M O N I A L</p>
-                        <h2 class="feedback__heading heading-lv2">
-                            What Our Students Says
+        <main class="main-content" hidden>
+            <!-- Features -->
+            <section class="features">
+                <div class="container">
+                    <p class="feature__">F E A T U R E S</p>
+                    <section class="features__content">
+                        <h2 class="features__heading heading-lv2">
+                            More then just learning
                         </h2>
-                    </section>
-                    <div class="feedback__list">
-                        <div class="feedback__item">
-                            <a href="#!">
-                                <div class="feedback-item__open-quotes">
-                                    <svg
-                                        width="30"
-                                        height="28"
-                                        viewBox="0 0 30 28"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
-                                            fill="#2073d4"
-                                        />
-                                    </svg>
-                                </div>
-                                <blockquote class="feedback-item__content">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Neque exercitationem
-                                    aliquid, minima illum veritatis rem autem
-                                    ducimus impedit inventore molestiae officiis
-                                    iusto aut a quo assumenda saepe nemo cumque.
-                                    Quibusdam?
-                                </blockquote>
-                                <img
-                                    src="./assets/img/feedback-avatar-01.jpeg"
-                                    alt=""
-                                    class="feedbacl-item__avatar"
-                                />
-                                <div class="feedback-item__infor">
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-name"
-                                    >
-                                        Sonia Akhter
-                                    </span>
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-job"
-                                    >
-                                        Software engineer at Uber
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="feedback__item">
-                            <a href="#!">
-                                <div class="feedback-item__open-quotes">
-                                    <svg
-                                        width="30"
-                                        height="28"
-                                        viewBox="0 0 30 28"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
-                                            fill="#2073d4"
-                                        />
-                                    </svg>
-                                </div>
-                                <blockquote class="feedback-item__content">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Neque exercitationem
-                                    aliquid, minima illum veritatis rem autem
-                                    ducimus impedit inventore molestiae officiis
-                                    iusto aut a quo assumenda saepe nemo cumque.
-                                    Quibusdam?
-                                </blockquote>
-                                <img
-                                    src="./assets/img/feedback-avatar-02.jpg"
-                                    alt=""
-                                    class="feedbacl-item__avatar"
-                                />
-                                <div class="feedback-item__infor">
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-name"
-                                    >
-                                        David
-                                    </span>
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-job"
-                                    >
-                                        Student at MIT
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="feedback__item">
-                            <a href="#!">
-                                <div class="feedback-item__open-quotes">
-                                    <svg
-                                        width="30"
-                                        height="28"
-                                        viewBox="0 0 30 28"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
-                                            fill="#2073d4"
-                                        />
-                                    </svg>
-                                </div>
-                                <blockquote class="feedback-item__content">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Neque exercitationem
-                                    aliquid, minima illum veritatis rem autem
-                                    ducimus impedit inventore molestiae officiis
-                                    iusto aut a quo assumenda saepe nemo cumque.
-                                    Quibusdam?
-                                </blockquote>
-                                <img
-                                    src="./assets/img/feedback-avatar-03.jpeg"
-                                    alt=""
-                                    class="feedbacl-item__avatar"
-                                />
-                                <div class="feedback-item__infor">
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-name"
-                                    >
-                                        William
-                                    </span>
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-job"
-                                    >
-                                        Designer at Amazon
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="feedback__dots-group">
-                        <span
-                            class="feedback__dot feedback__dot--action"
-                        ></span>
-                        <span class="feedback__dot"></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Stats -->
-        <section class="stats">
-            <div class="container">
-                <div class="stats__inner">
-                    <div class="stats__list">
-                        <div class="stats__item">
-                            <span class="stats-item__qty">2000</span>
-                            <span class="stat-item__infor"
-                                >Enrolled Learners</span
-                            >
-                        </div>
-                        <div class="stats__item">
-                            <span class="stats-item__qty">30</span>
-                            <span class="stat-item__infor"
-                                >Courses In Progress</span
-                            >
-                        </div>
-                        <div class="stats__item">
-                            <span class="stats-item__qty">40+</span>
-                            <span class="stat-item__infor"
-                                >Online Instructors</span
-                            >
-                        </div>
-                        <div class="stats__item">
-                            <span class="stats-item__qty">100+</span>
-                            <span class="stat-item__infor"
-                                >Good Feedback Of Courses</span
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Features-02 -->
-        <section class="features-02">
-            <div class="container">
-                <div class="features-02__inner">
-                    <figure class="features-02__img-block">
-                        <div class="features-02__img-block--small">
-                            <img
-                                src="./assets/img/features2-03.jpg"
-                                alt=""
-                                class="features-02__img features-02__img--small"
-                            />
-                            <img
-                                src="./assets/img/features2-02.jpg"
-                                alt=""
-                                class="features-02__img features-02__img--small"
-                            />
-                        </div>
-                        <img
-                            src="./assets/img/features2-01.jpg"
-                            alt=""
-                            class="features-02__img features-02__img--big"
-                        />
-                    </figure>
-                    <div class="features-02__content">
-                        <h2 class="feature-02__heading heading-lv2">
-                            Learner outcomes through our awesome platform
-                        </h2>
-                        <p class="feature-02__desc">
-                            87% of people learning for professional development
-                            report career benefits like getting a promotion, a
-                            raise, or starting a new career.
+                        <p class="features__desc">
+                            Read our awesome feature that is absolutely suit for
+                            you. Explore the feature and know the best.
                         </p>
-                        <a href="#!" class="btn features-02__btn">Sign Up</a>
+                    </section>
+                    <div class="features__inner">
+                        <div class="features__list">
+                            <div class="features__item">
+                                <div class="features-item__icon">
+                                    <svg
+                                        width="27"
+                                        height="27"
+                                        viewBox="0 0 27 27"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M26 13.9961V15.1656C26 19.8436 24.8875 21 20.45 21H6.55C2.1125 21 1 19.8305 1 15.1656V6.83443C1 2.16951 2.1125 1 6.55 1H8.5"
+                                            stroke="currentcolor"
+                                            stroke-width="1.6"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                        <path
+                                            d="M13.5 21.5V25.5"
+                                            stroke="currentcolor"
+                                            stroke-width="1.6"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                        <path
+                                            d="M1 14.75H26"
+                                            stroke="currentcolor"
+                                            stroke-width="1.6"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                        <path
+                                            d="M7.875 26H19.125"
+                                            stroke="currentcolor"
+                                            stroke-width="1.6"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                        <path
+                                            d="M20.825 10.2127H14.875C13.15 10.2127 12.575 9.0627 12.575 7.9127V3.5127C12.575 2.1377 13.7 1.0127 15.075 1.0127H20.825C22.1 1.0127 23.125 2.0377 23.125 3.31269V7.9127C23.125 9.1877 22.1 10.2127 20.825 10.2127Z"
+                                            stroke="currentcolor"
+                                            stroke-width="1.6"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                        <path
+                                            d="M24.6375 8.39985L23.125 7.33735V3.88735L24.6375 2.82485C25.3875 2.31235 26 2.62485 26 3.53735V7.69985C26 8.61235 25.3875 8.92485 24.6375 8.39985Z"
+                                            stroke="currentcolor"
+                                            stroke-width="1.6"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h3 class="features-item__heading">
+                                    Training from Experts
+                                </h3>
+                                <p class="features-item__desc">
+                                    Learn from anywhere in the world on desktop
+                                    menu Phone with an Internet connection.
+                                </p>
+                            </div>
+                            <div class="features__item">
+                                <div class="features-item__icon">
+                                    <svg
+                                        width="28"
+                                        height="27"
+                                        viewBox="0 0 28 27"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M11.4 19.746H6.47299C2.092 19.746 1 18.654 1 14.273V6.47299C1 2.092 2.092 1 6.47299 1H20.162C24.543 1 25.635 2.092 25.635 6.47299"
+                                            stroke="currentcolor"
+                                            stroke-width="1.7"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                        <path
+                                            d="M11.3999 25.6218V19.7458"
+                                            stroke="currentcolor"
+                                            stroke-width="1.7"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                        <path
+                                            d="M1 14.5459H11.4"
+                                            stroke="currentcolor"
+                                            stroke-width="1.7"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                        <path
+                                            d="M7.16211 25.6218H11.4001"
+                                            stroke="currentcolor"
+                                            stroke-width="1.7"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                        <path
+                                            d="M26.9999 14.3509V21.7739C26.9999 24.8549 26.2329 25.6219 23.152 25.6219H18.537C15.456 25.6219 14.689 24.8549 14.689 21.7739V14.3509C14.689 11.2699 15.456 10.5029 18.537 10.5029H23.152C26.2329 10.5029 26.9999 11.2699 26.9999 14.3509Z"
+                                            stroke="currentcolor"
+                                            stroke-width="1.7"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                        <path
+                                            d="M20.8179 21.4359H20.8296"
+                                            stroke="currentcolor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h3 class="features-item__heading">
+                                    Over 1.1k Video Course
+                                </h3>
+                                <p class="features-item__desc">
+                                    Learn from anywhere in the world on desktop
+                                    menu Phone with an Internet connection.
+                                </p>
+                            </div>
+                            <div class="features__item">
+                                <div class="features-item__icon">
+                                    <svg
+                                        width="28"
+                                        height="28"
+                                        viewBox="0 0 28 28"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.6185 23.8234H7.24516C3.5585 23.8234 2.3335 21.3734 2.3335 18.9118V9.08842C2.3335 5.40176 3.5585 4.17676 7.24516 4.17676H14.6185C18.3052 4.17676 19.5302 5.40176 19.5302 9.08842V18.9118C19.5302 22.5984 18.2935 23.8234 14.6185 23.8234Z"
+                                            stroke="currentcolor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                        <path
+                                            d="M22.7736 19.9502L19.5303 17.6752V10.3135L22.7736 8.03849C24.3603 6.93015 25.6669 7.60682 25.6669 9.55515V18.4452C25.6669 20.3935 24.3603 21.0702 22.7736 19.9502Z"
+                                            stroke="currentcolor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                        <path
+                                            d="M13.4165 12.8345C14.383 12.8345 15.1665 12.051 15.1665 11.0845C15.1665 10.118 14.383 9.33447 13.4165 9.33447C12.45 9.33447 11.6665 10.118 11.6665 11.0845C11.6665 12.051 12.45 12.8345 13.4165 12.8345Z"
+                                            stroke="currentcolor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h3 class="features-item__heading">
+                                    Occasional updates
+                                </h3>
+                                <p class="features-item__desc">
+                                    Learn from anywhere in the world on desktop
+                                    menu Phone with an Internet connection.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Blog -->
-        <section class="blogs">
-            <div class="container">
-                <div class="blogs__inner">
-                    <div class="blogs__content">
-                        <p class="blogs__title">B L O G S</p>
-                        <h2 class="blogs__heading heading-lv2">
-                            Trending Our Blogs
-                        </h2>
-                    </div>
-                    <div class="blogs__list">
-                        <article class="blogs__item">
-                            <a href="#!">
-                                <figure class="blogs-item__wrap-img">
-                                    <img
-                                        src="./assets/img/blog-01.jpg"
-                                        alt=""
-                                        class="blogs-item__img"
-                                    />
-                                </figure>
-                                <section class="blogs-item__infor">
-                                    <div class="blogser-name">
-                                        <i class="fa-solid fa-user"></i>
-                                        <span>David</span>
-                                    </div>
-                                    <h3 class="blogs-item__heading">
-                                        Passkeys: What the Heck and Why?
-                                    </h3>
-                                    <div class="blogs-item__row">
-                                        <div class="date">
-                                            <i
-                                                class="fa-regular fa-calendar-days"
-                                            ></i>
-                                            <span>20 May, 2023</span>
-                                        </div>
-                                        <div class="view">
-                                            <i class="fa-regular fa-eye"></i>
-                                            <span>20 May, 2023</span>
-                                        </div>
-                                    </div>
-                                </section>
+            </section>
+            <!-- Courses -->
+            <section class="courses">
+                <div class="container">
+                    <div class="courses__innner">
+                        <p class="courses__title">C O U R S E S</p>
+                        <section class="courses__content">
+                            <div class="courses__text">
+                                <h2 class="courses__heading heading-lv2">
+                                    Popular Courses
+                                </h2>
+                                <p class="courses__desc">
+                                    Check out our most poular courses that suit
+                                    for you. Here you can find your favourite
+                                    one.
+                                </p>
+                            </div>
+                            <a href="#!" class="courses__link"
+                                >View All Courses
                             </a>
-                        </article>
-                        <article class="blogs__item">
-                            <a href="#!">
-                                <figure class="blogs-item__wrap-img">
-                                    <img
-                                        src="./assets/img/blog-02.jpg"
-                                        alt=""
-                                        class="blogs-item__img"
+                        </section>
+                        <div class="courses__list">
+                            <article class="courses__item">
+                                <span class="courses__price">$50.00</span>
+                                <a href="#!">
+                                    <figure class="courses-item__wrap-img">
+                                        <img
+                                            src="./assets/img/courses-01.jpg"
+                                            alt="Basic web design"
+                                            class="courses-item__img"
+                                        />
+                                    </figure>
+                                    <section class="courses__infor">
+                                        <div class="courses-item__star-group">
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <span class="courses-item__label"
+                                                >(5 rating)</span
+                                            >
+                                        </div>
+                                        <h3 class="courses-item__heading">
+                                            Basic web design
+                                        </h3>
+                                        <p class="courses-item__desc">
+                                            Learn web design from basic to
+                                            advanced
+                                        </p>
+                                        <div
+                                            class="courses-item__seperate"
+                                        ></div>
+                                        <div class="courses-item__row">
+                                            <div class="course-item__stats">
+                                                <i class="fa-solid fa-user"></i>
+                                                <span
+                                                    class="courses-item__label"
+                                                    >32 Students</span
+                                                >
+                                            </div>
+                                            <div class="course-item__stats">
+                                                <i class="fa-solid fa-file"></i>
+                                                <span
+                                                    class="courses-item__label"
+                                                    >10 Lessons</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </section>
+                                </a>
+                            </article>
+                            <article class="courses__item">
+                                <span class="courses__price">$70.00</span>
+                                <a href="#!">
+                                    <figure class="courses-item__wrap-img">
+                                        <img
+                                            src="./assets/img/courses-02.png"
+                                            alt=""
+                                            class="courses-item__img"
+                                        />
+                                    </figure>
+                                    <section class="courses__infor">
+                                        <div class="courses-item__star-group">
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <span class="courses-item__label"
+                                                >(9 rating)</span
+                                            >
+                                        </div>
+                                        <h3 class="courses-item__heading">
+                                            Machine learning for beginer
+                                        </h3>
+                                        <p class="courses-item__desc">
+                                            Machine learning course for
+                                            beginners
+                                        </p>
+                                        <div
+                                            class="courses-item__seperate"
+                                        ></div>
+                                        <div class="courses-item__row">
+                                            <div class="course-item__stats">
+                                                <i class="fa-solid fa-user"></i>
+                                                <span
+                                                    class="courses-item__label"
+                                                    >18 Students</span
+                                                >
+                                            </div>
+                                            <div class="course-item__stats">
+                                                <i class="fa-solid fa-file"></i>
+                                                <span
+                                                    class="courses-item__label"
+                                                    >15 Lessons</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </section>
+                                </a>
+                            </article>
+                            <article class="courses__item">
+                                <span class="courses__price">$45.00</span>
+                                <a href="#!">
+                                    <figure class="courses-item__wrap-img">
+                                        <img
+                                            src="./assets/img/courses-03.jpg"
+                                            alt=""
+                                            class="courses-item__img"
+                                        />
+                                    </figure>
+                                    <section class="courses__infor">
+                                        <div class="courses-item__star-group">
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/star.svg"
+                                                alt="star"
+                                                class="courses-item__star"
+                                            />
+                                            <span class="courses-item__label"
+                                                >(7 rating)</span
+                                            >
+                                        </div>
+                                        <h3 class="courses-item__heading">
+                                            UX/UI Design
+                                        </h3>
+                                        <p class="courses-item__desc">
+                                            Learn ux/ui design from zero to hero
+                                        </p>
+                                        <div
+                                            class="courses-item__seperate"
+                                        ></div>
+                                        <div class="courses-item__row">
+                                            <div class="course-item__stats">
+                                                <i class="fa-solid fa-user"></i>
+                                                <span
+                                                    class="courses-item__label"
+                                                    >40 Students</span
+                                                >
+                                            </div>
+                                            <div class="course-item__stats">
+                                                <i class="fa-solid fa-file"></i>
+                                                <span
+                                                    class="courses-item__label"
+                                                    >12 Lessons</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </section>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="courses__control control">
+                            <a href="#!" class="control__left">
+                                <svg
+                                    width="6"
+                                    height="12"
+                                    viewBox="0 0 6 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M5.5 1L0.5 6L5.5 11"
+                                        stroke="currentcolor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
                                     />
-                                </figure>
-                                <section class="blogs-item__infor">
-                                    <div class="blogser-name">
-                                        <i class="fa-solid fa-user"></i>
-                                        <span>William</span>
-                                    </div>
-                                    <h3 class="blogs-item__heading">
-                                        How to become a better developer?
-                                    </h3>
-                                    <div class="blogs-item__row">
-                                        <div class="date">
-                                            <i
-                                                class="fa-regular fa-calendar-days"
-                                            ></i>
-                                            <span>20 May, 2023</span>
-                                        </div>
-                                        <div class="view">
-                                            <i class="fa-regular fa-eye"></i>
-                                            <span>20 May, 2023</span>
-                                        </div>
-                                    </div>
-                                </section>
+                                </svg>
                             </a>
-                        </article>
-                        <article class="blogs__item">
-                            <a href="#!">
-                                <figure class="blogs-item__wrap-img">
-                                    <img
-                                        src="./assets/img/blog-03.jpg"
-                                        alt=""
-                                        class="blogs-item__img"
+                            <a href="#!" class="control__right">
+                                <svg
+                                    width="6"
+                                    height="12"
+                                    viewBox="0 0 6 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0.5 1L5.5 6L0.5 11"
+                                        stroke="currentcolor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
                                     />
-                                </figure>
-                                <section class="blogs-item__infor">
-                                    <div class="blogser-name">
-                                        <i class="fa-solid fa-user"></i>
-                                        <span>John</span>
-                                    </div>
-                                    <h3 class="blogs-item__heading">
-                                        Skills needed to become a backend
-                                        developer
-                                    </h3>
-                                    <div class="blogs-item__row">
-                                        <div class="date">
-                                            <i
-                                                class="fa-regular fa-calendar-days"
-                                            ></i>
-                                            <span>20 May, 2023</span>
-                                        </div>
-                                        <div class="view">
-                                            <i class="fa-regular fa-eye"></i>
-                                            <span>20 May, 2023</span>
-                                        </div>
-                                    </div>
-                                </section>
+                                </svg>
                             </a>
-                        </article>
-                        <article class="blogs__item">
-                            <a href="#!">
-                                <figure class="blogs-item__wrap-img">
-                                    <img
-                                        src="./assets/img/blog-04.jpg"
-                                        alt=""
-                                        class="blogs-item__img"
-                                    />
-                                </figure>
-                                <section class="blogs-item__infor">
-                                    <div class="blogser-name">
-                                        <i class="fa-solid fa-user"></i>
-                                        <span>Laura</span>
-                                    </div>
-                                    <h3 class="blogs-item__heading">
-                                        How to learn programming effectively
-                                    </h3>
-                                    <div class="blogs-item__row">
-                                        <div class="date">
-                                            <i
-                                                class="fa-regular fa-calendar-days"
-                                            ></i>
-                                            <span>20 May, 2023</span>
-                                        </div>
-                                        <div class="view">
-                                            <i class="fa-regular fa-eye"></i>
-                                            <span>20 May, 2023</span>
-                                        </div>
-                                    </div>
-                                </section>
-                            </a>
-                        </article>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__inner">
+                        <section class="feedback__content">
+                            <p class="feedback__title">T E S T I M O N I A L</p>
+                            <h2 class="feedback__heading heading-lv2">
+                                What Our Students Says
+                            </h2>
+                        </section>
+                        <div class="feedback__list">
+                            <div class="feedback__item">
+                                <a href="#!">
+                                    <div class="feedback-item__open-quotes">
+                                        <svg
+                                            width="30"
+                                            height="28"
+                                            viewBox="0 0 30 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
+                                                fill="#2073d4"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <blockquote class="feedback-item__content">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Neque exercitationem
+                                        aliquid, minima illum veritatis rem
+                                        autem ducimus impedit inventore
+                                        molestiae officiis iusto aut a quo
+                                        assumenda saepe nemo cumque. Quibusdam?
+                                    </blockquote>
+                                    <img
+                                        src="./assets/img/feedback-avatar-01.jpeg"
+                                        alt=""
+                                        class="feedbacl-item__avatar"
+                                    />
+                                    <div class="feedback-item__infor">
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-name"
+                                        >
+                                            Sonia Akhter
+                                        </span>
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-job"
+                                        >
+                                            Software engineer at Uber
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feedback__item">
+                                <a href="#!">
+                                    <div class="feedback-item__open-quotes">
+                                        <svg
+                                            width="30"
+                                            height="28"
+                                            viewBox="0 0 30 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
+                                                fill="#2073d4"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <blockquote class="feedback-item__content">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Neque exercitationem
+                                        aliquid, minima illum veritatis rem
+                                        autem ducimus impedit inventore
+                                        molestiae officiis iusto aut a quo
+                                        assumenda saepe nemo cumque. Quibusdam?
+                                    </blockquote>
+                                    <img
+                                        src="./assets/img/feedback-avatar-02.jpg"
+                                        alt=""
+                                        class="feedbacl-item__avatar"
+                                    />
+                                    <div class="feedback-item__infor">
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-name"
+                                        >
+                                            David
+                                        </span>
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-job"
+                                        >
+                                            Student at MIT
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feedback__item">
+                                <a href="#!">
+                                    <div class="feedback-item__open-quotes">
+                                        <svg
+                                            width="30"
+                                            height="28"
+                                            viewBox="0 0 30 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
+                                                fill="#2073d4"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <blockquote class="feedback-item__content">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Neque exercitationem
+                                        aliquid, minima illum veritatis rem
+                                        autem ducimus impedit inventore
+                                        molestiae officiis iusto aut a quo
+                                        assumenda saepe nemo cumque. Quibusdam?
+                                    </blockquote>
+                                    <img
+                                        src="./assets/img/feedback-avatar-03.jpeg"
+                                        alt=""
+                                        class="feedbacl-item__avatar"
+                                    />
+                                    <div class="feedback-item__infor">
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-name"
+                                        >
+                                            William
+                                        </span>
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-job"
+                                        >
+                                            Designer at Amazon
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="feedback__dots-group">
+                            <span
+                                class="feedback__dot feedback__dot--action"
+                            ></span>
+                            <span class="feedback__dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Stats -->
+            <section class="stats">
+                <div class="container">
+                    <div class="stats__inner">
+                        <div class="stats__list">
+                            <div class="stats__item">
+                                <span class="stats-item__qty">2000</span>
+                                <span class="stat-item__infor"
+                                    >Enrolled Learners</span
+                                >
+                            </div>
+                            <div class="stats__item">
+                                <span class="stats-item__qty">30</span>
+                                <span class="stat-item__infor"
+                                    >Courses In Progress</span
+                                >
+                            </div>
+                            <div class="stats__item">
+                                <span class="stats-item__qty">40+</span>
+                                <span class="stat-item__infor"
+                                    >Online Instructors</span
+                                >
+                            </div>
+                            <div class="stats__item">
+                                <span class="stats-item__qty">100+</span>
+                                <span class="stat-item__infor"
+                                    >Good Feedback Of Courses</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Features-02 -->
+            <section class="features-02">
+                <div class="container">
+                    <div class="features-02__inner">
+                        <figure class="features-02__img-block">
+                            <div class="features-02__img-block--small">
+                                <img
+                                    src="./assets/img/features2-03.jpg"
+                                    alt=""
+                                    class="features-02__img features-02__img--small"
+                                />
+                                <img
+                                    src="./assets/img/features2-02.jpg"
+                                    alt=""
+                                    class="features-02__img features-02__img--small"
+                                />
+                            </div>
+                            <img
+                                src="./assets/img/features2-01.jpg"
+                                alt=""
+                                class="features-02__img features-02__img--big"
+                            />
+                        </figure>
+                        <div class="features-02__content">
+                            <h2 class="feature-02__heading heading-lv2">
+                                Learner outcomes through our awesome platform
+                            </h2>
+                            <p class="feature-02__desc">
+                                87% of people learning for professional
+                                development report career benefits like getting
+                                a promotion, a raise, or starting a new career.
+                            </p>
+                            <a href="#!" class="btn features-02__btn"
+                                >Sign Up</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Blog -->
+            <section class="blogs">
+                <div class="container">
+                    <div class="blogs__inner">
+                        <div class="blogs__content">
+                            <p class="blogs__title">B L O G S</p>
+                            <h2 class="blogs__heading heading-lv2">
+                                Trending Our Blogs
+                            </h2>
+                        </div>
+                        <div class="blogs__list">
+                            <article class="blogs__item">
+                                <a href="#!">
+                                    <figure class="blogs-item__wrap-img">
+                                        <img
+                                            src="./assets/img/blog-01.jpg"
+                                            alt=""
+                                            class="blogs-item__img"
+                                        />
+                                    </figure>
+                                    <section class="blogs-item__infor">
+                                        <div class="blogser-name">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>David</span>
+                                        </div>
+                                        <h3 class="blogs-item__heading">
+                                            Passkeys: What the Heck and Why?
+                                        </h3>
+                                        <div class="blogs-item__row">
+                                            <div class="date">
+                                                <i
+                                                    class="fa-regular fa-calendar-days"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                            <div class="view">
+                                                <i
+                                                    class="fa-regular fa-eye"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </a>
+                            </article>
+                            <article class="blogs__item">
+                                <a href="#!">
+                                    <figure class="blogs-item__wrap-img">
+                                        <img
+                                            src="./assets/img/blog-02.jpg"
+                                            alt=""
+                                            class="blogs-item__img"
+                                        />
+                                    </figure>
+                                    <section class="blogs-item__infor">
+                                        <div class="blogser-name">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>William</span>
+                                        </div>
+                                        <h3 class="blogs-item__heading">
+                                            How to become a better developer?
+                                        </h3>
+                                        <div class="blogs-item__row">
+                                            <div class="date">
+                                                <i
+                                                    class="fa-regular fa-calendar-days"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                            <div class="view">
+                                                <i
+                                                    class="fa-regular fa-eye"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </a>
+                            </article>
+                            <article class="blogs__item">
+                                <a href="#!">
+                                    <figure class="blogs-item__wrap-img">
+                                        <img
+                                            src="./assets/img/blog-03.jpg"
+                                            alt=""
+                                            class="blogs-item__img"
+                                        />
+                                    </figure>
+                                    <section class="blogs-item__infor">
+                                        <div class="blogser-name">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>John</span>
+                                        </div>
+                                        <h3 class="blogs-item__heading">
+                                            Skills needed to become a backend
+                                            developer
+                                        </h3>
+                                        <div class="blogs-item__row">
+                                            <div class="date">
+                                                <i
+                                                    class="fa-regular fa-calendar-days"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                            <div class="view">
+                                                <i
+                                                    class="fa-regular fa-eye"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </a>
+                            </article>
+                            <article class="blogs__item">
+                                <a href="#!">
+                                    <figure class="blogs-item__wrap-img">
+                                        <img
+                                            src="./assets/img/blog-04.jpg"
+                                            alt=""
+                                            class="blogs-item__img"
+                                        />
+                                    </figure>
+                                    <section class="blogs-item__infor">
+                                        <div class="blogser-name">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>Laura</span>
+                                        </div>
+                                        <h3 class="blogs-item__heading">
+                                            How to learn programming effectively
+                                        </h3>
+                                        <div class="blogs-item__row">
+                                            <div class="date">
+                                                <i
+                                                    class="fa-regular fa-calendar-days"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                            <div class="view">
+                                                <i
+                                                    class="fa-regular fa-eye"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer" style="display: none">
             <div class="container">
                 <div class="footer__row">
                     <div class="footer_column">
