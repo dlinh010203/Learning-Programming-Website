@@ -5,23 +5,82 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LightKey Education</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./assets/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -37,6 +96,7 @@
         />
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/courses.css" />
+        <link rel="stylesheet" href="./assets/css/courses-responsive.css" />
     </head>
     <body>
         <!-- Header -->
@@ -127,12 +187,18 @@
                                 >
                             </li>
                             <li class="nav__item">
-                                <a href="./blogs.html" class="nav__link" title="Blogs"
+                                <a
+                                    href="./blogs.html"
+                                    class="nav__link"
+                                    title="Blogs"
                                     >Blogs</a
                                 >
                             </li>
                             <li class="nav__item">
-                                <a href="./contact.html" class="nav__link" title="Contact"
+                                <a
+                                    href="./contact.html"
+                                    class="nav__link"
+                                    title="Contact"
                                     >Contact</a
                                 >
                             </li>
@@ -146,7 +212,7 @@
                             ><i class="fa-solid fa-cart-shopping"></i
                         ></a>
                     </div>
-                    <div class="header__search">
+                    <form class="header__search">
                         <input
                             type="text"
                             class="header-search__input"
@@ -176,10 +242,160 @@
                                 ></path>
                             </svg>
                         </button>
-                    </div>
+                    </form>
+                    <label for="menu-checkbox" class="toogle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentcolor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
                 </div>
             </div>
         </header>
+        <!-- Header tablet & mobile -->
+        <div class="menu-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <div class="hide-on-pc menu-drawer">
+                <div class="logo">
+                    <span class="logo__text">
+                        <span class="logo__branch"
+                            >LightKey <span style="color: orange">.</span></span
+                        >
+                    </span>
+                </div>
+                <label for="menu-checkbox" class="menu-close"
+                    ><i class="fa-solid fa-xmark"></i
+                ></label>
+                <form class="menu-search-form">
+                    <input
+                        type="text"
+                        class="menu-search__input"
+                        placeholder="Search..."
+                    />
+                    <span class="menu-search__icon"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                    ></span>
+                </form>
+                <div class="seperate tablet-seperate"></div>
+                <nav class="menu-navbar">
+                    <ul class="menu-navbar__list">
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./index.html"
+                                class="menu-navbar__link"
+                                title="Home"
+                                ><i class="fa-solid fa-house"></i> Home</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./about.html"
+                                class="menu-navbar__link"
+                                title="About"
+                                ><i class="fa-solid fa-address-card"></i>
+                                About</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item menu-navbar__item--action">
+                            <!-- <nav class="menu-navbar__courses" hidden>
+                                <ul class="menu-navbar-courses__list">
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Basic web design</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Machine learning for
+                                            beginner</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >UX/UI Design</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >C++</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Java</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Python</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav> -->
+                            <a
+                                href="./courses.html"
+                                class="menu-navbar__link menu-navbar__link--action"
+                                title="Courses"
+                                ><i class="fa-solid fa-chalkboard-user"></i>
+                                Courses</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./blogs.html"
+                                class="menu-navbar__link"
+                                title="Blogs"
+                                ><i class="fa-brands fa-blogger-b"></i> Blogs</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./contact.html"
+                                class="menu-navbar__link"
+                                title="Contact"
+                                ><i class="fa-solid fa-handshake"></i>
+                                Contact</a
+                            >
+                        </li>
+                        <div class="seperate"></div>
+                        <li class="menu-navbar__item">
+                            <a href="./contact.html" class="menu-navbar__link"
+                                >Sign in</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a href="./contact.html" class="menu-navbar__link"
+                                >Sign up</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <!-- BreadCrumb -->
         <div class="page-title-area">
             <div class="text">
@@ -192,7 +408,9 @@
                             >
                         </li>
                         <li class="breadcrumb__item">
-                            <a href="./courses.html" class="breadcrumb__link">Courses</a>
+                            <a href="./courses.html" class="breadcrumb__link"
+                                >Courses</a
+                            >
                         </li>
                     </ul>
                 </nav>
@@ -202,7 +420,7 @@
         <div class="courses-area">
             <div class="container">
                 <div class="courses__innner">
-                    <section class="courses">
+                    <main class="courses">
                         <div class="courses__list">
                             <article class="courses__item">
                                 <span class="courses__price">$50.00</span>
@@ -621,20 +839,19 @@
                                 </a>
                             </article>
                         </div>
-                    </section>
+                    </main>
                     <aside class="sidebar">
-                        
-                            <form action="" class="courses__search-form">
-                                <input
-                                    type="text"
-                                    class="courses-search__input"
-                                    placeholder="Search for courses..."
-                                />
-                                <button class="courses__search-btn">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                            </form>
-                     
+                        <form action="" class="courses__search-form">
+                            <input
+                                type="text"
+                                class="courses-search__input"
+                                placeholder="Search for courses..."
+                            />
+                            <button class="courses__search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+
                         <div class="courses__categories">
                             <h3 class="courses-sidebar__heading">Categories</h3>
                             <div class="courses-sidebar__checkbox">

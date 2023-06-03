@@ -5,23 +5,82 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LightKey Education</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./assets/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -37,6 +96,7 @@
         />
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/about.css" />
+        <link rel="stylesheet" href="./assets/css/about-responsive.css" />
     </head>
     <body>
         <!-- Header -->
@@ -56,7 +116,10 @@
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a href="/index.html" class="nav__link" title="Home"
+                                <a
+                                    href="/index.html"
+                                    class="nav__link"
+                                    title="Home"
                                     >Home</a
                                 >
                             </li>
@@ -121,12 +184,18 @@
                                 >
                             </li>
                             <li class="nav__item">
-                                <a href="./blogs.html" class="nav__link" title="Blogs"
+                                <a
+                                    href="./blogs.html"
+                                    class="nav__link"
+                                    title="Blogs"
                                     >Blogs</a
                                 >
                             </li>
                             <li class="nav__item">
-                                <a href="./contact.html" class="nav__link" title="Contact"
+                                <a
+                                    href="./contact.html"
+                                    class="nav__link"
+                                    title="Contact"
                                     >Contact</a
                                 >
                             </li>
@@ -140,7 +209,7 @@
                             ><i class="fa-solid fa-cart-shopping"></i
                         ></a>
                     </div>
-                    <div class="header__search">
+                    <form class="header__search">
                         <input
                             type="text"
                             class="header-search__input"
@@ -170,10 +239,162 @@
                                 ></path>
                             </svg>
                         </button>
-                    </div>
+                    </form>
+                    <label for="menu-checkbox" class="toogle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                fill="currentcolor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
                 </div>
             </div>
         </header>
+        <!-- Header tablet & mobile -->
+        <div class="menu-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <div class="hide-on-pc menu-drawer">
+                <div class="logo">
+                    <span class="logo__text">
+                        <span class="logo__branch"
+                            >LightKey <span style="color: orange">.</span></span
+                        >
+                    </span>
+                </div>
+                <label for="menu-checkbox" class="menu-close"
+                    ><i class="fa-solid fa-xmark"></i
+                ></label>
+                <form class="menu-search-form">
+                    <input
+                        type="text"
+                        class="menu-search__input"
+                        placeholder="Search..."
+                    />
+                    <span class="menu-search__icon"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                    ></span>
+                </form>
+                <div class="seperate tablet-seperate"></div>
+                <nav class="menu-navbar">
+                    <ul class="menu-navbar__list">
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./index.html"
+                                class="menu-navbar__link"
+                                title="Home"
+                                ><i class="fa-solid fa-house"></i> Home</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./about.html"
+                                class="menu-navbar__link"
+                                title="About"
+                                ><i class="fa-solid fa-address-card"></i>
+                                About</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item menu-navbar__item--action">
+                            <!-- <nav class="menu-navbar__courses" hidden>
+                                <ul class="menu-navbar-courses__list">
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Basic web design</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Machine learning for
+                                            beginner</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >UX/UI Design</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >C++</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Java</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Python</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav> -->
+                            <a
+                                href="./courses.html"
+                                class="menu-navbar__link menu-navbar__link--action"
+                                title="Courses"
+                                ><i class="fa-solid fa-chalkboard-user"></i>
+                                Courses</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./blogs.html"
+                                class="menu-navbar__link"
+                                title="Blogs"
+                                ><i class="fa-brands fa-blogger-b"></i> Blogs</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./contact.html"
+                                class="menu-navbar__link"
+                                title="Contact"
+                                ><i class="fa-solid fa-handshake"></i>
+                                Contact</a
+                            >
+                        </li>
+                        <div class="seperate"></div>
+                        <li class="menu-navbar__item">
+                            <a href="./contact.html" class="menu-navbar__link"
+                                >Sign in</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a href="./contact.html" class="menu-navbar__link"
+                                >Sign up</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
         <!-- BreadCrumb -->
         <div class="page-title-area">
             <div class="text">
@@ -181,418 +402,517 @@
                 <nav>
                     <ul class="breadcrumb">
                         <li class="breadcrumb__item">
-                            <a href="./index.html" class="breadcrumb__link">Home</a>
+                            <a href="./index.html" class="breadcrumb__link"
+                                >Home</a
+                            >
                         </li>
                         <li class="breadcrumb__item">
-                            <a href="./about.html" class="breadcrumb__link">About</a>
+                            <a href="./about.html" class="breadcrumb__link"
+                                >About</a
+                            >
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <!-- About -->
-        <section class="about">
-            <div class="container">
-                <div class="about__inner">
-                    <figure class="about__wrap-img">
-                        <img
-                            src="./assets/img/about-01.jpg"
-                            alt=""
-                            class="about__img"
-                        />
-                    </figure>
-                    <section class="about__content">
-                        <h2 class="heading-lv2 about__heading">
-                            LightKey - BECOME A BETTER DEVELOPER
+        <main class="main-content">
+            <!-- About -->
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <figure class="about__wrap-img">
+                            <img
+                                src="./assets/img/about-01.jpg"
+                                alt=""
+                                class="about__img"
+                            />
+                        </figure>
+                        <section class="about__content">
+                            <h2 class="heading-lv2 about__heading">
+                                LightKey - BECOME A BETTER DEVELOPER
+                            </h2>
+                            <p class="about__desc">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ducimus est amet rerum
+                                inventore. Non cum aut, eum ducimus, id
+                                dignissimos hic obcaecati facere.
+                            </p>
+                            <p class="about__desc">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Aliquam vero eius quia dolorem
+                                et est aspernatur nam doloribus. Alias officiis
+                                molestias quasi voluptatibus magnam molestiae
+                                quidem obcaecati! Consectetur, quis molestias.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <!-- Lecturers -->
+            <section class="lecturers">
+                <div class="container">
+                    <div class="lecturers__inner">
+                        <p class="leacturers__title">T E A R C H E R</p>
+                        <h2 class="heading-lv2 lecturers__heading">
+                            MEET OUR EXPERT TEACHER
                         </h2>
-                        <p class="about__desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Ducimus est amet rerum inventore. Non cum aut,
-                            eum ducimus, id dignissimos hic obcaecati facere.
-                        </p>
-                        <p class="about__desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Aliquam vero eius quia dolorem et est
-                            aspernatur nam doloribus. Alias officiis molestias
-                            quasi voluptatibus magnam molestiae quidem
-                            obcaecati! Consectetur, quis molestias.
-                            
-                        </p>
-                    </section>
-                </div>
-            </div>
-        </section>
-        <!-- Lecturers -->
-        <section class="lecturers">
-            <div class="container">
-                <div class="lecturers__inner">
-                    <p class="leacturers__title">T E A R C H E R</p>
-                    <h2 class="heading-lv2 lecturers__heading">MEET OUR EXPERT TEACHER</h2>
-                    <div class="lecturers__list">
-                        <div class="lecturer__item">
-                            <figure class="lecturer-item__wrap-avatar">
-                                <img src="./assets/img/lecture-01.jpg" alt="" class="lecturer-item__avatar">
-                            </figure>
-                            <div class="lecturer-item__infor">
-                                <p class="lecturer__name">Anne Sullivan</p>
-                                <p class="lecturer__job">Senior at google has 10 years of experience</p>
-                                <div class="lecturer__contact">
-                                    <div class="social">
-                                        <span class="social__icon"><i class="fa-brands fa-facebook-f"></i></span>
-                                        <span class="social__icon"><i class="fa-brands fa-twitter"></i></span>
-                                        <span class="social__icon"><i class="fa-brands fa-instagram"></i></span>
-                                        <span class="social__icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                        <div class="lecturers__list">
+                            <div class="lecturer__item">
+                                <figure class="lecturer-item__wrap-avatar">
+                                    <img
+                                        src="./assets/img/lecture-01.jpg"
+                                        alt=""
+                                        class="lecturer-item__avatar"
+                                    />
+                                </figure>
+                                <div class="lecturer-item__infor">
+                                    <p class="lecturer__name">Anne Sullivan</p>
+                                    <p class="lecturer__job">
+                                        Senior at google has 10 years of
+                                        experience
+                                    </p>
+                                    <div class="lecturer__contact">
+                                        <div class="social">
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-facebook-f"
+                                                ></i
+                                            ></span>
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-twitter"
+                                                ></i
+                                            ></span>
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-instagram"
+                                                ></i
+                                            ></span>
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-linkedin-in"
+                                                ></i
+                                            ></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="lecturer__item">
-                            <figure class="lecturer-item__wrap-avatar">
-                                <img src="./assets/img/lecture-02.jpg" alt="" class="lecturer-item__avatar">
-                            </figure>
-                            <div class="lecturer-item__infor">
-                                <p class="lecturer__name">Anne Sullivan</p>
-                                <p class="lecturer__job">Senior at google has 10 years of experience</p>
-                                <div class="lecturer__contact">
-                                    <div class="social">
-                                        <span class="social__icon"><i class="fa-brands fa-facebook-f"></i></span>
-                                        <span class="social__icon"><i class="fa-brands fa-twitter"></i></span>
-                                        <span class="social__icon"><i class="fa-brands fa-instagram"></i></span>
-                                        <span class="social__icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                            <div class="lecturer__item">
+                                <figure class="lecturer-item__wrap-avatar">
+                                    <img
+                                        src="./assets/img/lecture-02.jpg"
+                                        alt=""
+                                        class="lecturer-item__avatar"
+                                    />
+                                </figure>
+                                <div class="lecturer-item__infor">
+                                    <p class="lecturer__name">Anne Sullivan</p>
+                                    <p class="lecturer__job">
+                                        Senior at google has 10 years of
+                                        experience
+                                    </p>
+                                    <div class="lecturer__contact">
+                                        <div class="social">
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-facebook-f"
+                                                ></i
+                                            ></span>
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-twitter"
+                                                ></i
+                                            ></span>
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-instagram"
+                                                ></i
+                                            ></span>
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-linkedin-in"
+                                                ></i
+                                            ></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="lecturer__item">
-                            <figure class="lecturer-item__wrap-avatar">
-                                <img src="./assets/img/lecture-03.jpg" alt="" class="lecturer-item__avatar">
-                            </figure>
-                            <div class="lecturer-item__infor">
-                                <p class="lecturer__name">Anne Sullivan</p>
-                                <p class="lecturer__job">Senior at google has 10 years of experience</p>
-                                <div class="lecturer__contact">
-                                    <div class="social">
-                                        <span class="social__icon"><i class="fa-brands fa-facebook-f"></i></span>
-                                        <span class="social__icon"><i class="fa-brands fa-twitter"></i></span>
-                                        <span class="social__icon"><i class="fa-brands fa-instagram"></i></span>
-                                        <span class="social__icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                            <div class="lecturer__item">
+                                <figure class="lecturer-item__wrap-avatar">
+                                    <img
+                                        src="./assets/img/lecture-03.jpg"
+                                        alt=""
+                                        class="lecturer-item__avatar"
+                                    />
+                                </figure>
+                                <div class="lecturer-item__infor">
+                                    <p class="lecturer__name">Anne Sullivan</p>
+                                    <p class="lecturer__job">
+                                        Senior at google has 10 years of
+                                        experience
+                                    </p>
+                                    <div class="lecturer__contact">
+                                        <div class="social">
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-facebook-f"
+                                                ></i
+                                            ></span>
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-twitter"
+                                                ></i
+                                            ></span>
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-instagram"
+                                                ></i
+                                            ></span>
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-linkedin-in"
+                                                ></i
+                                            ></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="lecturer__item">
-                            <figure class="lecturer-item__wrap-avatar">
-                                <img src="./assets/img/lecture-04.jpg" alt="" class="lecturer-item__avatar">
-                            </figure>
-                            <div class="lecturer-item__infor">
-                                <p class="lecturer__name">Anne Sullivan</p>
-                                <p class="lecturer__job">Senior at google has 10 years of experience</p>
-                                <div class="lecturer__contact">
-                                    <div class="social">
-                                        <span class="social__icon"><i class="fa-brands fa-facebook-f"></i></span>
-                                        <span class="social__icon"><i class="fa-brands fa-twitter"></i></span>
-                                        <span class="social__icon"><i class="fa-brands fa-instagram"></i></span>
-                                        <span class="social__icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                            <div class="lecturer__item">
+                                <figure class="lecturer-item__wrap-avatar">
+                                    <img
+                                        src="./assets/img/lecture-04.jpg"
+                                        alt=""
+                                        class="lecturer-item__avatar"
+                                    />
+                                </figure>
+                                <div class="lecturer-item__infor">
+                                    <p class="lecturer__name">Anne Sullivan</p>
+                                    <p class="lecturer__job">
+                                        Senior at google has 10 years of
+                                        experience
+                                    </p>
+                                    <div class="lecturer__contact">
+                                        <div class="social">
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-facebook-f"
+                                                ></i
+                                            ></span>
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-twitter"
+                                                ></i
+                                            ></span>
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-instagram"
+                                                ></i
+                                            ></span>
+                                            <span class="social__icon"
+                                                ><i
+                                                    class="fa-brands fa-linkedin-in"
+                                                ></i
+                                            ></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
-            </div>
-        </section>
-        <!-- Feedback -->
-        <section class="feedback">
-            <div class="container">
-                <div class="feedback__inner">
-                    <section class="feedback__content">
-                        <p class="feedback__title">T E S T I M O N I A L</p>
-                        <h2 class="feedback__heading heading-lv2">
-                            What Our Students Says
-                        </h2>
-                    </section>
-                    <div class="feedback__list">
-                        <div class="feedback__item">
-                            <a href="#!">
-                                <div class="feedback-item__open-quotes">
-                                    <svg
-                                        width="30"
-                                        height="28"
-                                        viewBox="0 0 30 28"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
-                                            fill="#2073d4"
-                                        />
-                                    </svg>
-                                </div>
-                                <blockquote class="feedback-item__content">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Neque exercitationem
-                                    aliquid, minima illum veritatis rem autem
-                                    ducimus impedit inventore molestiae officiis
-                                    iusto aut a quo assumenda saepe nemo cumque.
-                                    Quibusdam?
-                                </blockquote>
-                                <img
-                                    src="./assets/img/feedback-avatar-01.jpeg"
-                                    alt=""
-                                    class="feedbacl-item__avatar"
-                                />
-                                <div class="feedback-item__infor">
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-name"
-                                    >
-                                        Sonia Akhter
-                                    </span>
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-job"
-                                    >
-                                        Software engineer at Uber
-                                    </span>
-                                </div>
-                            </a>
+            </section>
+            <!-- Feedback -->
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__inner">
+                        <section class="feedback__content">
+                            <p class="feedback__title">T E S T I M O N I A L</p>
+                            <h2 class="feedback__heading heading-lv2">
+                                What Our Students Says
+                            </h2>
+                        </section>
+                        <div class="feedback__list">
+                            <div class="feedback__item">
+                                <a href="#!">
+                                    <div class="feedback-item__open-quotes">
+                                        <svg
+                                            width="30"
+                                            height="28"
+                                            viewBox="0 0 30 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
+                                                fill="#2073d4"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <blockquote class="feedback-item__content">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Neque exercitationem
+                                        aliquid, minima illum veritatis rem
+                                        autem ducimus impedit inventore
+                                        molestiae officiis iusto aut a quo
+                                        assumenda saepe nemo cumque. Quibusdam?
+                                    </blockquote>
+                                    <img
+                                        src="./assets/img/feedback-avatar-01.jpeg"
+                                        alt=""
+                                        class="feedbacl-item__avatar"
+                                    />
+                                    <div class="feedback-item__infor">
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-name"
+                                        >
+                                            Sonia Akhter
+                                        </span>
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-job"
+                                        >
+                                            Software engineer at Uber
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feedback__item">
+                                <a href="#!">
+                                    <div class="feedback-item__open-quotes">
+                                        <svg
+                                            width="30"
+                                            height="28"
+                                            viewBox="0 0 30 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
+                                                fill="#2073d4"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <blockquote class="feedback-item__content">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Neque exercitationem
+                                        aliquid, minima illum veritatis rem
+                                        autem ducimus impedit inventore
+                                        molestiae officiis iusto aut a quo
+                                        assumenda saepe nemo cumque. Quibusdam?
+                                    </blockquote>
+                                    <img
+                                        src="./assets/img/feedback-avatar-02.jpg"
+                                        alt=""
+                                        class="feedbacl-item__avatar"
+                                    />
+                                    <div class="feedback-item__infor">
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-name"
+                                        >
+                                            David
+                                        </span>
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-job"
+                                        >
+                                            Student at MIT
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feedback__item">
+                                <a href="#!">
+                                    <div class="feedback-item__open-quotes">
+                                        <svg
+                                            width="30"
+                                            height="28"
+                                            viewBox="0 0 30 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
+                                                fill="#2073d4"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <blockquote class="feedback-item__content">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Neque exercitationem
+                                        aliquid, minima illum veritatis rem
+                                        autem ducimus impedit inventore
+                                        molestiae officiis iusto aut a quo
+                                        assumenda saepe nemo cumque. Quibusdam?
+                                    </blockquote>
+                                    <img
+                                        src="./assets/img/feedback-avatar-03.jpeg"
+                                        alt=""
+                                        class="feedbacl-item__avatar"
+                                    />
+                                    <div class="feedback-item__infor">
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-name"
+                                        >
+                                            William
+                                        </span>
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-job"
+                                        >
+                                            Designer at Amazon
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feedback__item">
+                                <a href="#!">
+                                    <div class="feedback-item__open-quotes">
+                                        <svg
+                                            width="30"
+                                            height="28"
+                                            viewBox="0 0 30 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
+                                                fill="#2073d4"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <blockquote class="feedback-item__content">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Neque exercitationem
+                                        aliquid, minima illum veritatis rem
+                                        autem ducimus impedit inventore
+                                        molestiae officiis iusto aut a quo
+                                        assumenda saepe nemo cumque. Quibusdam?
+                                    </blockquote>
+                                    <img
+                                        src="./assets/img/feedback-avatar-04.jpg"
+                                        alt=""
+                                        class="feedbacl-item__avatar"
+                                    />
+                                    <div class="feedback-item__infor">
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-name"
+                                        >
+                                            William
+                                        </span>
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-job"
+                                        >
+                                            Designer at Amazon
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feedback__item">
+                                <a href="#!">
+                                    <div class="feedback-item__open-quotes">
+                                        <svg
+                                            width="30"
+                                            height="28"
+                                            viewBox="0 0 30 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
+                                                fill="#2073d4"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <blockquote class="feedback-item__content">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Neque exercitationem
+                                        aliquid, minima illum veritatis rem
+                                        autem ducimus impedit inventore
+                                        molestiae officiis iusto aut a quo
+                                        assumenda saepe nemo cumque. Quibusdam?
+                                    </blockquote>
+                                    <img
+                                        src="./assets/img/feedback-avatar-05.jpg"
+                                        alt=""
+                                        class="feedbacl-item__avatar"
+                                    />
+                                    <div class="feedback-item__infor">
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-name"
+                                        >
+                                            William
+                                        </span>
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-job"
+                                        >
+                                            Designer at Amazon
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feedback__item">
+                                <a href="#!">
+                                    <div class="feedback-item__open-quotes">
+                                        <svg
+                                            width="30"
+                                            height="28"
+                                            viewBox="0 0 30 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
+                                                fill="#2073d4"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <blockquote class="feedback-item__content">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Neque exercitationem
+                                        aliquid, minima illum veritatis rem
+                                        autem ducimus impedit inventore
+                                        molestiae officiis iusto aut a quo
+                                        assumenda saepe nemo cumque. Quibusdam?
+                                    </blockquote>
+                                    <img
+                                        src="./assets/img/feedback-avatar-06.jpeg"
+                                        alt=""
+                                        class="feedbacl-item__avatar"
+                                    />
+                                    <div class="feedback-item__infor">
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-name"
+                                        >
+                                            William
+                                        </span>
+                                        <span
+                                            style="display: block"
+                                            class="feedback-item__infor-job"
+                                        >
+                                            Designer at Amazon
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="feedback__item">
-                            <a href="#!">
-                                <div class="feedback-item__open-quotes">
-                                    <svg
-                                        width="30"
-                                        height="28"
-                                        viewBox="0 0 30 28"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
-                                            fill="#2073d4"
-                                        />
-                                    </svg>
-                                </div>
-                                <blockquote class="feedback-item__content">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Neque exercitationem
-                                    aliquid, minima illum veritatis rem autem
-                                    ducimus impedit inventore molestiae officiis
-                                    iusto aut a quo assumenda saepe nemo cumque.
-                                    Quibusdam?
-                                </blockquote>
-                                <img
-                                    src="./assets/img/feedback-avatar-02.jpg"
-                                    alt=""
-                                    class="feedbacl-item__avatar"
-                                />
-                                <div class="feedback-item__infor">
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-name"
-                                    >
-                                        David
-                                    </span>
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-job"
-                                    >
-                                        Student at MIT
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="feedback__item">
-                            <a href="#!">
-                                <div class="feedback-item__open-quotes">
-                                    <svg
-                                        width="30"
-                                        height="28"
-                                        viewBox="0 0 30 28"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
-                                            fill="#2073d4"
-                                        />
-                                    </svg>
-                                </div>
-                                <blockquote class="feedback-item__content">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Neque exercitationem
-                                    aliquid, minima illum veritatis rem autem
-                                    ducimus impedit inventore molestiae officiis
-                                    iusto aut a quo assumenda saepe nemo cumque.
-                                    Quibusdam?
-                                </blockquote>
-                                <img
-                                    src="./assets/img/feedback-avatar-03.jpeg"
-                                    alt=""
-                                    class="feedbacl-item__avatar"
-                                />
-                                <div class="feedback-item__infor">
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-name"
-                                    >
-                                        William
-                                    </span>
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-job"
-                                    >
-                                        Designer at Amazon
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="feedback__item">
-                            <a href="#!">
-                                <div class="feedback-item__open-quotes">
-                                    <svg
-                                        width="30"
-                                        height="28"
-                                        viewBox="0 0 30 28"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
-                                            fill="#2073d4"
-                                        />
-                                    </svg>
-                                </div>
-                                <blockquote class="feedback-item__content">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Neque exercitationem
-                                    aliquid, minima illum veritatis rem autem
-                                    ducimus impedit inventore molestiae officiis
-                                    iusto aut a quo assumenda saepe nemo cumque.
-                                    Quibusdam?
-                                </blockquote>
-                                <img
-                                    src="./assets/img/feedback-avatar-04.jpg"
-                                    alt=""
-                                    class="feedbacl-item__avatar"
-                                />
-                                <div class="feedback-item__infor">
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-name"
-                                    >
-                                        William
-                                    </span>
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-job"
-                                    >
-                                        Designer at Amazon
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="feedback__item">
-                            <a href="#!">
-                                <div class="feedback-item__open-quotes">
-                                    <svg
-                                        width="30"
-                                        height="28"
-                                        viewBox="0 0 30 28"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
-                                            fill="#2073d4"
-                                        />
-                                    </svg>
-                                </div>
-                                <blockquote class="feedback-item__content">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Neque exercitationem
-                                    aliquid, minima illum veritatis rem autem
-                                    ducimus impedit inventore molestiae officiis
-                                    iusto aut a quo assumenda saepe nemo cumque.
-                                    Quibusdam?
-                                </blockquote>
-                                <img
-                                    src="./assets/img/feedback-avatar-05.jpg"
-                                    alt=""
-                                    class="feedbacl-item__avatar"
-                                />
-                                <div class="feedback-item__infor">
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-name"
-                                    >
-                                        William
-                                    </span>
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-job"
-                                    >
-                                        Designer at Amazon
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="feedback__item">
-                            <a href="#!">
-                                <div class="feedback-item__open-quotes">
-                                    <svg
-                                        width="30"
-                                        height="28"
-                                        viewBox="0 0 30 28"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z"
-                                            fill="#2073d4"
-                                        />
-                                    </svg>
-                                </div>
-                                <blockquote class="feedback-item__content">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Neque exercitationem
-                                    aliquid, minima illum veritatis rem autem
-                                    ducimus impedit inventore molestiae officiis
-                                    iusto aut a quo assumenda saepe nemo cumque.
-                                    Quibusdam?
-                                </blockquote>
-                                <img
-                                    src="./assets/img/feedback-avatar-06.jpeg"
-                                    alt=""
-                                    class="feedbacl-item__avatar"
-                                />
-                                <div class="feedback-item__infor">
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-name"
-                                    >
-                                        William
-                                    </span>
-                                    <span
-                                        style="display: block"
-                                        class="feedback-item__infor-job"
-                                    >
-                                        Designer at Amazon
-                                    </span>
-                                </div>
-                            </a>
+                        <div class="feedback__dots-group">
+                            <span
+                                class="feedback__dot feedback__dot--action"
+                            ></span>
+                            <span class="feedback__dot"></span>
                         </div>
                     </div>
-                    <div class="feedback__dots-group">
-                        <span
-                            class="feedback__dot feedback__dot--action"
-                        ></span>
-                        <span class="feedback__dot"></span>
-                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
         <footer class="footer">
             <div class="container">
                 <div class="footer__row">

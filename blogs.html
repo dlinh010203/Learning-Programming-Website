@@ -5,23 +5,82 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LightKey Education</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./assets/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -37,7 +96,8 @@
         />
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/blogs.css" />
-    </head> 
+        <link rel="stylesheet" href="assets/css/blogs-responsive.css" />
+    </head>
     <body>
         <!-- Header -->
         <header class="header">
@@ -152,7 +212,7 @@
                             ><i class="fa-solid fa-cart-shopping"></i
                         ></a>
                     </div>
-                    <div class="header__search">
+                    <form class="header__search">
                         <input
                             type="text"
                             class="header-search__input"
@@ -182,10 +242,162 @@
                                 ></path>
                             </svg>
                         </button>
-                    </div>
+                    </form>
+                    <label for="menu-checkbox" class="toogle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                fill="currentcolor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
                 </div>
             </div>
         </header>
+        <!-- Header tablet & mobile -->
+        <div class="menu-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <div class="hide-on-pc menu-drawer">
+                <div class="logo">
+                    <span class="logo__text">
+                        <span class="logo__branch"
+                            >LightKey <span style="color: orange">.</span></span
+                        >
+                    </span>
+                </div>
+                <label for="menu-checkbox" class="menu-close"
+                    ><i class="fa-solid fa-xmark"></i
+                ></label>
+                <form class="menu-search-form">
+                    <input
+                        type="text"
+                        class="menu-search__input"
+                        placeholder="Search..."
+                    />
+                    <span class="menu-search__icon"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                    ></span>
+                </form>
+                <div class="seperate tablet-seperate"></div>
+                <nav class="menu-navbar">
+                    <ul class="menu-navbar__list">
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./index.html"
+                                class="menu-navbar__link"
+                                title="Home"
+                                ><i class="fa-solid fa-house"></i> Home</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./about.html"
+                                class="menu-navbar__link"
+                                title="About"
+                                ><i class="fa-solid fa-address-card"></i>
+                                About</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item menu-navbar__item--action">
+                            <!-- <nav class="menu-navbar__courses" hidden>
+                                <ul class="menu-navbar-courses__list">
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Basic web design</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Machine learning for
+                                            beginner</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >UX/UI Design</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >C++</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Java</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Python</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav> -->
+                            <a
+                                href="./courses.html"
+                                class="menu-navbar__link menu-navbar__link--action"
+                                title="Courses"
+                                ><i class="fa-solid fa-chalkboard-user"></i>
+                                Courses</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./blogs.html"
+                                class="menu-navbar__link"
+                                title="Blogs"
+                                ><i class="fa-brands fa-blogger-b"></i> Blogs</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./contact.html"
+                                class="menu-navbar__link"
+                                title="Contact"
+                                ><i class="fa-solid fa-handshake"></i>
+                                Contact</a
+                            >
+                        </li>
+                        <div class="seperate"></div>
+                        <li class="menu-navbar__item">
+                            <a href="./contact.html" class="menu-navbar__link"
+                                >Sign in</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a href="./contact.html" class="menu-navbar__link"
+                                >Sign up</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
         <!-- BreadCrumb -->
         <div class="page-title-area">
             <div class="text">
@@ -210,7 +422,7 @@
         <div class="blogs-area">
             <div class="container">
                 <div class="blogs__inner">
-                    <div class="blogs__list">
+                    <main class="blogs__list">
                         <article class="blogs__item">
                             <a href="#!">
                                 <figure class="blogs-item__wrap-img">
@@ -244,9 +456,9 @@
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Corrupti tempora, illo
                                         obcaecati blanditiis magni, fuga
-                                        exercitationem quas enim nihil quibusdam ea
-                                        iste. Ea quam sunt praesentium quia dolore
-                                        perferendis dignissimos.
+                                        exercitationem quas enim nihil quibusdam
+                                        ea iste. Ea quam sunt praesentium quia
+                                        dolore perferendis dignissimos.
                                     </p>
                                     <a href="#!" class="btn blogs-item__btn"
                                         >Read More</a
@@ -287,9 +499,9 @@
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Corrupti tempora, illo
                                         obcaecati blanditiis magni, fuga
-                                        exercitationem quas enim nihil quibusdam ea
-                                        iste. Ea quam sunt praesentium quia dolore
-                                        perferendis dignissimos.
+                                        exercitationem quas enim nihil quibusdam
+                                        ea iste. Ea quam sunt praesentium quia
+                                        dolore perferendis dignissimos.
                                     </p>
                                     <a href="#!" class="btn blogs-item__btn"
                                         >Read More</a
@@ -324,15 +536,16 @@
                                         </div>
                                     </div>
                                     <h2 class="blogs-item__heading">
-                                        Skills needed to become a backend developer
+                                        Skills needed to become a backend
+                                        developer
                                     </h2>
                                     <p class="blogs-item__desc">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Corrupti tempora, illo
                                         obcaecati blanditiis magni, fuga
-                                        exercitationem quas enim nihil quibusdam ea
-                                        iste. Ea quam sunt praesentium quia dolore
-                                        perferendis dignissimos.
+                                        exercitationem quas enim nihil quibusdam
+                                        ea iste. Ea quam sunt praesentium quia
+                                        dolore perferendis dignissimos.
                                     </p>
                                     <a href="#!" class="btn blogs-item__btn"
                                         >Read More</a
@@ -373,9 +586,9 @@
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Corrupti tempora, illo
                                         obcaecati blanditiis magni, fuga
-                                        exercitationem quas enim nihil quibusdam ea
-                                        iste. Ea quam sunt praesentium quia dolore
-                                        perferendis dignissimos.
+                                        exercitationem quas enim nihil quibusdam
+                                        ea iste. Ea quam sunt praesentium quia
+                                        dolore perferendis dignissimos.
                                     </p>
                                     <a href="#!" class="btn blogs-item__btn"
                                         >Read More</a
@@ -394,20 +607,172 @@
                                 <i class="fa-solid fa-chevron-right"></i>
                             </a>
                         </div>
+                    </main>
+                    <!-- Mobile Blogs -->
+                    <div class="mobile-blogs">
+                        <div class="mobile-blogs__list">
+                            <article class="mobile-blogs__item">
+                                <a href="#!">
+                                    <figure class="mobile-blogs-item__wrap-img">
+                                        <img
+                                            src="./assets/img/blog-01.jpg"
+                                            alt=""
+                                            class="mobile-blogs-item__img"
+                                        />
+                                    </figure>
+                                    <section class="mobile-blogs-item__infor">
+                                        <div class="mobile-blogser-name">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>David</span>
+                                        </div>
+                                        <h3 class="mobile-blogs-item__heading">
+                                            Passkeys: What the Heck and Why?
+                                        </h3>
+                                        <div class="mobile-blogs-item__row">
+                                            <div class="date">
+                                                <i
+                                                    class="fa-regular fa-calendar-days"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                            <div class="view">
+                                                <i
+                                                    class="fa-regular fa-eye"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </a>
+                            </article>
+                            <article class="mobile-blogs__item">
+                                <a href="#!">
+                                    <figure class="mobile-blogs-item__wrap-img">
+                                        <img
+                                            src="./assets/img/blog-02.jpg"
+                                            alt=""
+                                            class="mobile-blogs-item__img"
+                                        />
+                                    </figure>
+                                    <section class="mobile-blogs-item__infor">
+                                        <div class="mobile-blogser-name">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>William</span>
+                                        </div>
+                                        <h3 class="mobile-blogs-item__heading">
+                                            How to become a better developer?
+                                        </h3>
+                                        <div class="mobile-blogs-item__row">
+                                            <div class="date">
+                                                <i
+                                                    class="fa-regular fa-calendar-days"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                            <div class="view">
+                                                <i
+                                                    class="fa-regular fa-eye"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </a>
+                            </article>
+                            <article class="mobile-blogs__item">
+                                <a href="#!">
+                                    <figure class="mobile-blogs-item__wrap-img">
+                                        <img
+                                            src="./assets/img/blog-03.jpg"
+                                            alt=""
+                                            class="mobile-blogs-item__img"
+                                        />
+                                    </figure>
+                                    <section class="mobile-blogs-item__infor">
+                                        <div class="mobile-blogser-name">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>John</span>
+                                        </div>
+                                        <h3 class="mobile-blogs-item__heading">
+                                            Skills needed to become a backend
+                                            developer
+                                        </h3>
+                                        <div class="mobile-blogs-item__row">
+                                            <div class="date">
+                                                <i
+                                                    class="fa-regular fa-calendar-days"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                            <div class="view">
+                                                <i
+                                                    class="fa-regular fa-eye"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </a>
+                            </article>
+                            <article class="mobile-blogs__item">
+                                <a href="#!">
+                                    <figure class="mobile-blogs-item__wrap-img">
+                                        <img
+                                            src="./assets/img/blog-04.jpg"
+                                            alt=""
+                                            class="mobile-blogs-item__img"
+                                        />
+                                    </figure>
+                                    <section class="mobile-blogs-item__infor">
+                                        <div class="mobile-blogser-name">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>Laura</span>
+                                        </div>
+                                        <h3 class="mobile-blogs-item__heading">
+                                            How to learn programming effectively
+                                        </h3>
+                                        <div class="mobile-blogs-item__row">
+                                            <div class="date">
+                                                <i
+                                                    class="fa-regular fa-calendar-days"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                            <div class="view">
+                                                <i
+                                                    class="fa-regular fa-eye"
+                                                ></i>
+                                                <span>20 May, 2023</span>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="blogs__control">
+                            <a href="#!" class="blogs-control__item">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </a>
+                            <a href="#!" class="blogs-control__item">1</a>
+                            <a href="#!" class="blogs-control__item">2</a>
+                            <a href="#!" class="blogs-control__item">3</a>
+                            <a href="#!" class="blogs-control__item">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
                     </div>
                     <aside class="sidebar">
-                       
-                            <form action="" class="courses__search-form">
-                                <input
-                                    type="text"
-                                    class="courses-search__input"
-                                    placeholder="Search for Courses..."
-                                />
-                                <button class="courses__search-btn">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                            </form>
-                        
+                        <form action="" class="courses__search-form">
+                            <input
+                                type="text"
+                                class="courses-search__input"
+                                placeholder="Search for Courses..."
+                            />
+                            <button class="courses__search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+
                         <div class="recent-posts">
                             <h3 class="blogs-sidebar__heading">Recent posts</h3>
                             <div class="blogs-sidebar__seperate"></div>
@@ -415,44 +780,84 @@
                                 <a href="#!">
                                     <article class="recent-post__item">
                                         <figure class="recent-post-item__thumb">
-                                            <img src="./assets/img/blog-01.avif" alt="" class="recent-post-item__img">
+                                            <img
+                                                src="./assets/img/blog-01.avif"
+                                                alt=""
+                                                class="recent-post-item__img"
+                                            />
                                         </figure>
                                         <div class="recent-post-item__infor">
-                                            <span class="recent-post-item__date">May 21, 2023</span>
-                                            <h4 class="recent-post-item__heading">Lorem ipsum dolor sit amet.</h4>
+                                            <span class="recent-post-item__date"
+                                                >May 21, 2023</span
+                                            >
+                                            <h4
+                                                class="recent-post-item__heading"
+                                            >
+                                                Lorem ipsum dolor sit amet.
+                                            </h4>
                                         </div>
                                     </article>
                                 </a>
                                 <a href="#!">
                                     <article class="recent-post__item">
                                         <figure class="recent-post-item__thumb">
-                                            <img src="./assets/img/blog-02.jpg" alt="" class="recent-post-item__img">
+                                            <img
+                                                src="./assets/img/blog-02.jpg"
+                                                alt=""
+                                                class="recent-post-item__img"
+                                            />
                                         </figure>
                                         <div class="recent-post-item__infor">
-                                            <span class="recent-post-item__date">May 21, 2023</span>
-                                            <h4 class="recent-post-item__heading">Lorem ipsum dolor sit amet.</h4>
+                                            <span class="recent-post-item__date"
+                                                >May 21, 2023</span
+                                            >
+                                            <h4
+                                                class="recent-post-item__heading"
+                                            >
+                                                Lorem ipsum dolor sit amet.
+                                            </h4>
                                         </div>
                                     </article>
                                 </a>
                                 <a href="#!">
                                     <article class="recent-post__item">
                                         <figure class="recent-post-item__thumb">
-                                            <img src="./assets/img/blog-03.jpg" alt="" class="recent-post-item__img">
+                                            <img
+                                                src="./assets/img/blog-03.jpg"
+                                                alt=""
+                                                class="recent-post-item__img"
+                                            />
                                         </figure>
                                         <div class="recent-post-item__infor">
-                                            <span class="recent-post-item__date">May 21, 2023</span>
-                                            <h4 class="recent-post-item__heading">Lorem ipsum dolor sit amet.</h4>
+                                            <span class="recent-post-item__date"
+                                                >May 21, 2023</span
+                                            >
+                                            <h4
+                                                class="recent-post-item__heading"
+                                            >
+                                                Lorem ipsum dolor sit amet.
+                                            </h4>
                                         </div>
                                     </article>
                                 </a>
                                 <a href="#!">
                                     <article class="recent-post__item">
                                         <figure class="recent-post-item__thumb">
-                                            <img src="./assets/img/blog-04.jpg" alt="" class="recent-post-item__img">
+                                            <img
+                                                src="./assets/img/blog-04.jpg"
+                                                alt=""
+                                                class="recent-post-item__img"
+                                            />
                                         </figure>
                                         <div class="recent-post-item__infor">
-                                            <span class="recent-post-item__date">May 21, 2023</span>
-                                            <h4 class="recent-post-item__heading">Lorem ipsum dolor sit amet.</h4>
+                                            <span class="recent-post-item__date"
+                                                >May 21, 2023</span
+                                            >
+                                            <h4
+                                                class="recent-post-item__heading"
+                                            >
+                                                Lorem ipsum dolor sit amet.
+                                            </h4>
                                         </div>
                                     </article>
                                 </a>
@@ -463,20 +868,48 @@
                             <div class="blogs-sidebar__seperate"></div>
                             <div class="category__list">
                                 <div class="category__item">
-                                    <input type="checkbox" name="" id="" class="category__checkbox">
-                                    <span class="blogs-sidebar__label">All</span>
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id=""
+                                        class="category__checkbox"
+                                    />
+                                    <span class="blogs-sidebar__label"
+                                        >All</span
+                                    >
                                 </div>
                                 <div class="category__item">
-                                    <input type="checkbox" name="" id="" class="category__checkbox">
-                                    <span class="blogs-sidebar__label">New post</span>
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id=""
+                                        class="category__checkbox"
+                                    />
+                                    <span class="blogs-sidebar__label"
+                                        >New post</span
+                                    >
                                 </div>
                                 <div class="category__item">
-                                    <input type="checkbox" name="" id="" class="category__checkbox">
-                                    <span class="blogs-sidebar__label">Popular post</span>
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id=""
+                                        class="category__checkbox"
+                                    />
+                                    <span class="blogs-sidebar__label"
+                                        >Popular post</span
+                                    >
                                 </div>
                                 <div class="category__item">
-                                    <input type="checkbox" name="" id="" class="category__checkbox">
-                                    <span class="blogs-sidebar__label">Tip & Video</span>
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id=""
+                                        class="category__checkbox"
+                                    />
+                                    <span class="blogs-sidebar__label"
+                                        >Tip & Video</span
+                                    >
                                 </div>
                             </div>
                         </div>
@@ -485,28 +918,42 @@
                             <div class="blogs-sidebar__seperate"></div>
                             <div class="tags__list">
                                 <span class="tags__item">
-                                    <a href="#!" class="blogs-sidebar__label">Courses</a>
+                                    <a href="#!" class="blogs-sidebar__label"
+                                        >Courses</a
+                                    >
                                 </span>
                                 <span class="tags__item">
-                                    <a href="#!" class="blogs-sidebar__label">Videos</a>
+                                    <a href="#!" class="blogs-sidebar__label"
+                                        >Videos</a
+                                    >
                                 </span>
                                 <span class="tags__item">
-                                    <a href="#!" class="blogs-sidebar__label">Design</a>
+                                    <a href="#!" class="blogs-sidebar__label"
+                                        >Design</a
+                                    >
                                 </span>
                                 <span class="tags__item">
-                                    <a href="#!" class="blogs-sidebar__label">Frontend</a>
+                                    <a href="#!" class="blogs-sidebar__label"
+                                        >Frontend</a
+                                    >
                                 </span>
                                 <span class="tags__item">
-                                    <a href="#!" class="blogs-sidebar__label">Backend</a>
+                                    <a href="#!" class="blogs-sidebar__label"
+                                        >Backend</a
+                                    >
                                 </span>
                                 <span class="tags__item">
-                                    <a href="#!" class="blogs-sidebar__label">Machine learning</a></span>
+                                    <a href="#!" class="blogs-sidebar__label"
+                                        >Machine learning</a
+                                    ></span
+                                >
                             </div>
                         </div>
                     </aside>
                 </div>
             </div>
         </div>
+
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
@@ -551,9 +998,7 @@
                                 >
                             </li>
                             <li class="footer__item">
-                                <a href="#!" class="footer-item__link"
-                                    >blogs</a
-                                >
+                                <a href="#!" class="footer-item__link">blogs</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#!" class="footer-item__link"

@@ -321,9 +321,6 @@ button {
     grid-template-columns: 3fr 1fr;
 }
 
-.courses {
-    width: 66%;
-}
 
 .courses__list {
     display: grid;
@@ -351,7 +348,7 @@ button {
 }
 
 .courses-item__wrap-img {
-    width: 370px;
+    width: 100%;
     height: 278px;
     border-radius: 12px 12px 0px 0px;
     overflow: hidden;
@@ -401,7 +398,6 @@ button {
 
 .courses-item__desc {
     font-size: 1.5rem;
-    white-space: nowrap;
     color: #575f66;
     margin-top: 12px;
 }

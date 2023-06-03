@@ -5,23 +5,82 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LightKey Education</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./assets/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -37,6 +96,7 @@
         />
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/contact.css" />
+        <link rel="stylesheet" href="./assets/css/contact-responsive.css">
     </head>
     <body>
         <!-- Header -->
@@ -152,7 +212,7 @@
                             ><i class="fa-solid fa-cart-shopping"></i
                         ></a>
                     </div>
-                    <div class="header__search">
+                    <form class="header__search">
                         <input
                             required
                             type="text"
@@ -183,10 +243,162 @@
                                 ></path>
                             </svg>
                         </button>
-                    </div>
+                    </form>
+                    <label for="menu-checkbox" class="toogle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                fill="currentcolor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
                 </div>
             </div>
         </header>
+        <!-- Header tablet & mobile -->
+        <div class="menu-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <div class="hide-on-pc menu-drawer">
+                <div class="logo">
+                    <span class="logo__text">
+                        <span class="logo__branch"
+                            >LightKey <span style="color: orange">.</span></span
+                        >
+                    </span>
+                </div>
+                <label for="menu-checkbox" class="menu-close"
+                    ><i class="fa-solid fa-xmark"></i
+                ></label>
+                <form class="menu-search-form">
+                    <input
+                        type="text"
+                        class="menu-search__input"
+                        placeholder="Search..."
+                    />
+                    <span class="menu-search__icon"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                    ></span>
+                </form>
+                <div class="seperate tablet-seperate"></div>
+                <nav class="menu-navbar">
+                    <ul class="menu-navbar__list">
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./index.html"
+                                class="menu-navbar__link"
+                                title="Home"
+                                ><i class="fa-solid fa-house"></i> Home</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./about.html"
+                                class="menu-navbar__link"
+                                title="About"
+                                ><i class="fa-solid fa-address-card"></i>
+                                About</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item menu-navbar__item--action">
+                            <!-- <nav class="menu-navbar__courses" hidden>
+                                <ul class="menu-navbar-courses__list">
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Basic web design</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Machine learning for
+                                            beginner</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >UX/UI Design</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >C++</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Java</a
+                                        >
+                                    </li>
+                                    <li class="menu-navbar-courses__item">
+                                        <a
+                                            href="#!"
+                                            class="menu-navbar-courses__link"
+                                            >Python</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav> -->
+                            <a
+                                href="./courses.html"
+                                class="menu-navbar__link menu-navbar__link--action"
+                                title="Courses"
+                                ><i class="fa-solid fa-chalkboard-user"></i>
+                                Courses</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./blogs.html"
+                                class="menu-navbar__link"
+                                title="Blogs"
+                                ><i class="fa-brands fa-blogger-b"></i> Blogs</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./contact.html"
+                                class="menu-navbar__link"
+                                title="Contact"
+                                ><i class="fa-solid fa-handshake"></i>
+                                Contact</a
+                            >
+                        </li>
+                        <div class="seperate"></div>
+                        <li class="menu-navbar__item">
+                            <a href="./contact.html" class="menu-navbar__link"
+                                >Sign in</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a href="./contact.html" class="menu-navbar__link"
+                                >Sign up</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
         <!-- BreadCrumb -->
         <div class="page-title-area">
             <div class="text">
@@ -207,166 +419,174 @@
                 </nav>
             </div>
         </div>
-        <!-- Contact -->
-        <div class="contact">
-            <div class="container">
-                <div class="contact__inner">
-                    <section class="contact__infor">
-                        <h2 class="contact__heading heading-lv2">Contact Us</h2>
-                        <div class="contact__list">
-                            <article class="contact__item">
-                                <div class="contact-item__icon">
-                                    <i class="fa-solid fa-location-dot"></i>
+        <main class="main-content">
+            <!-- Contact -->
+            <div class="contact">
+                <div class="container">
+                    <div class="contact__inner">
+                        <section class="contact__infor">
+                            <h2 class="contact__heading heading-lv2">
+                                Contact Us
+                            </h2>
+                            <div class="contact__list">
+                                <article class="contact__item">
+                                    <div class="contact-item__icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <p class="contact-item__desc">
+                                        <span>Address</span>: K345/17 Nguyen
+                                        Hoang, Ha Lam, Thang Binh, Quang Nam
+                                    </p>
+                                </article>
+                                <article class="contact__item">
+                                    <div class="contact-item__icon">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </div>
+                                    <p class="contact-item__desc">
+                                        <span>Tel </span>: +84766588572
+                                    </p>
+                                </article>
+                                <article class="contact__item">
+                                    <div class="contact-item__icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <p class="contact-item__desc">
+                                        <span>Email</span>:
+                                        linhdg.22it@vku.udn.vn
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="social">
+                                <span class="social__icon"
+                                    ><i class="fa-brands fa-facebook-f"></i
+                                ></span>
+                                <span class="social__icon"
+                                    ><i class="fa-brands fa-twitter"></i
+                                ></span>
+                                <span class="social__icon"
+                                    ><i class="fa-brands fa-instagram"></i
+                                ></span>
+                                <span class="social__icon"
+                                    ><i class="fa-brands fa-linkedin-in"></i
+                                ></span>
+                            </div>
+                        </section>
+                        <section class="contact__form">
+                            <form action="" class="form">
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label
+                                            for="first-name "
+                                            class="form__label"
+                                            >First Name:</label
+                                        >
+                                        <input
+                                            required
+                                            type="text"
+                                            id="first-name"
+                                            class="form__input"
+                                            placeholder="Enter first name..."
+                                        />
+                                        <p class="error">
+                                            Vui lòng nhập đúng định dạng
+                                        </p>
+                                    </div>
+                                    <div class="form__group">
+                                        <label
+                                            for="last-name"
+                                            class="form__label"
+                                            >Lats Name:</label
+                                        >
+                                        <input
+                                            required
+                                            type="text"
+                                            id="last-name"
+                                            class="form__input"
+                                            placeholder="Enter last name..."
+                                        />
+                                        <p class="error">
+                                            Vui lòng nhập đúng định dạng
+                                        </p>
+                                    </div>
                                 </div>
-                                <p class="contact-item__desc">
-                                    <span>Address</span>: K345/17 Nguyen Hoang,
-                                    Ha Lam, Thang Binh, Quang Nam
-                                </p>
-                            </article>
-                            <article class="contact__item">
-                                <div class="contact-item__icon">
-                                    <i class="fa-solid fa-phone-volume"></i>
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label for="email " class="form__label"
+                                            >Email:
+                                        </label>
+                                        <input
+                                            required
+                                            type="email"
+                                            id="email"
+                                            class="form__input"
+                                            placeholder="Enter your email..."
+                                        />
+                                        <p class="error">
+                                            Vui lòng nhập đúng định dạng
+                                        </p>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="phone" class="form__label"
+                                            >Tel:</label
+                                        >
+                                        <input
+                                            required
+                                            type="tel"
+                                            id="phone"
+                                            class="form__input"
+                                            placeholder="Enter your phone..."
+                                        />
+                                        <p class="error">
+                                            Vui lòng nhập đúng định dạng
+                                        </p>
+                                    </div>
                                 </div>
-                                <p class="contact-item__desc">
-                                    <span>Tel </span>: +84766588572
-                                </p>
-                            </article>
-                            <article class="contact__item">
-                                <div class="contact-item__icon">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <p class="contact-item__desc">
-                                    <span>Email</span>: linhdg.22it@vku.udn.vn
-                                </p>
-                            </article>
-                        </div>
-                        <div class="social">
-                            <span class="social__icon"
-                                ><i class="fa-brands fa-facebook-f"></i
-                            ></span>
-                            <span class="social__icon"
-                                ><i class="fa-brands fa-twitter"></i
-                            ></span>
-                            <span class="social__icon"
-                                ><i class="fa-brands fa-instagram"></i
-                            ></span>
-                            <span class="social__icon"
-                                ><i class="fa-brands fa-linkedin-in"></i
-                            ></span>
-                        </div>
-                    </section>
-                    <section class="contact__form">
-                        <form action="" class="form">
-                            <div class="form__row">
                                 <div class="form__group">
-                                    <label for="first-name " class="form__label"
-                                        >First Name:</label
+                                    <label for="subject" class="form__label"
+                                        >Subject:</label
                                     >
                                     <input
-                                        required
                                         type="text"
-                                        id="first-name"
-                                        class="form__input"
-                                        placeholder="Enter first name..."
+                                        class="form__input form__input-subject"
+                                        placeholder="Enter subject..."
                                     />
                                     <p class="error">
                                         Vui lòng nhập đúng định dạng
                                     </p>
                                 </div>
                                 <div class="form__group">
-                                    <label for="last-name" class="form__label"
-                                        >Lats Name:</label
+                                    <label for="message" class="form__label"
+                                        >Message:</label
                                     >
-                                    <input
-                                        required
-                                        type="text"
-                                        id="last-name"
-                                        class="form__input"
-                                        placeholder="Enter last name..."
-                                    />
-                                    <p class="error">
-                                        Vui lòng nhập đúng định dạng
-                                    </p>
+                                    <textarea
+                                        class="form__textarea"
+                                        name=""
+                                        id="message"
+                                        cols="70"
+                                        rows="4"
+                                        placeholder="Enter message..."
+                                    ></textarea>
                                 </div>
-                            </div>
-                            <div class="form__row">
-                                <div class="form__group">
-                                    <label for="email " class="form__label"
-                                        >Email:
-                                    </label>
-                                    <input
-                                        required
-                                        type="email"
-                                        id="email"
-                                        class="form__input"
-                                        placeholder="Enter your email..."
-                                    />
-                                    <p class="error">
-                                        Vui lòng nhập đúng định dạng
-                                    </p>
-                                </div>
-                                <div class="form__group">
-                                    <label for="phone" class="form__label"
-                                        >Tel:</label
-                                    >
-                                    <input
-                                        required
-                                        type="tel"
-                                        id="phone"
-                                        class="form__input"
-                                        placeholder="Enter your phone..."
-                                    />
-                                    <p class="error">
-                                        Vui lòng nhập đúng định dạng
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="form__group">
-                                <label for="subject" class="form__label"
-                                    >Subject:</label
-                                >
-                                <input
-                                    type="text"
-                                    class="form__input form__input-subject"
-                                    placeholder="Enter subject..."
-                                />
-                                <p class="error">
-                                    Vui lòng nhập đúng định dạng
-                                </p>
-                            </div>
-                            <div class="form__group">
-                                <label for="message" class="form__label"
-                                    >Message:</label
-                                >
-                                <textarea
-                                    class="form__textarea"
-                                    name=""
-                                    id="message"
-                                    cols="70"
-                                    rows="4"
-                                    placeholder="Enter message..."
-                                ></textarea>
-                            </div>
-
-                            <button href="#!" class="btn form__btn">
-                                Send Message
-                            </button>
-                        </form>
-                    </section>
+                                <button href="#!" class="btn form__btn">
+                                    Send Message
+                                </button>
+                            </form>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Google map -->
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d123007.72846898215!2d108.09507840000002!3d15.538585600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1684715481890!5m2!1svi!2s"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            class="map"
-        ></iframe>
+            <!-- Google map -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d123007.72846898215!2d108.09507840000002!3d15.538585600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1684715481890!5m2!1svi!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="map"
+            ></iframe>
+        </main>
         <!-- Footer -->
         <footer class="footer">
             <div class="container">

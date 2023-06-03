@@ -1,5 +1,5 @@
 /* Desktop */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
     .hide-on-pc {
         display: none;
     }
@@ -242,6 +242,8 @@
     .blogs-item__wrap-img {
         width: 100%;
     }
+
+  
 }
 
 /* Tablet  */
