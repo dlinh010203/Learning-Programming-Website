@@ -1,5 +1,13 @@
 /* PC */
 @media screen and (min-width: 992px) {
+
+    .back-home {
+        display: none;
+    }
+
+    .mobile-sign-up__callout {
+        display: none;
+    }
 }
 /* Tablet & Mobile */
 @media screen and (max-width: 991px) {
