@@ -180,9 +180,15 @@ a {
 
 .sign-up__wrap-img {
     position: relative;
-    padding: 100px 0 50px;
+    padding: 70px 0 50px;
     background-color: #2073d4;
     border-radius: 0 12px 12px 0;
+}
+
+.sign-up__img {
+    width: 100%;
+    height: 450px;
+    transform: translateY(5%);
 }
 
 .logo {
@@ -202,12 +208,13 @@ a {
  
 
 .sign-up__callout {
-    width: 300px;
     position: absolute;
-    color: #fff;
-    left: 50%;
+    left: 54%;
     transform: translateX(-50%);
-    bottom: 50px;
+    bottom: 60px;
+    width: 300px;
+    color: #fff;
+    
 }
 
 .sign-up__callout-link {

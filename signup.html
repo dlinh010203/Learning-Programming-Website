@@ -96,41 +96,99 @@
         />
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/signup.css" />
+        <link rel="stylesheet" href="./assets/css/signup-responsive.css" />
     </head>
     <body>
         <div class="sign-up">
             <div class="container">
                 <div class="sign-up__inner">
                     <form class="sign-up__form">
+                        <a href="./index.html">
+                            <div class="back-home"><i class="fa-solid fa-circle-xmark"></i></div>
+                        </a>
                         <h2 class="sign-up__heading">Sign up</h2>
                         <p class="sign-up__desc">
                             Please fill this form to create an account !
                         </p>
                         <div class="form__group">
-                            <input required class="form__input" type="text" id="username" placeholder="Username"/>
-                            <label class="form__label" for="username">Username</label>
-                            <span class="form__icon"><i class="fa-solid fa-user"></i></span>
+                            <input
+                                required
+                                class="form__input"
+                                type="text"
+                                id="username"
+                                placeholder="Username"
+                            />
+                            <label class="form__label" for="username"
+                                >Username</label
+                            >
+                            <span class="form__icon"
+                                ><i class="fa-solid fa-user"></i
+                            ></span>
                         </div>
                         <div class="form__group">
-                            <input required class="form__input" type="email" id="email" placeholder="Email"/>
+                            <input
+                                required
+                                class="form__input"
+                                type="email"
+                                id="email"
+                                placeholder="Email"
+                            />
                             <label class="form__label" for="email">Email</label>
-                            <span class="form__icon"><i class="fa-solid fa-envelope"></i></span>
+                            <span class="form__icon"
+                                ><i class="fa-solid fa-envelope"></i
+                            ></span>
                         </div>
                         <div class="form__group">
-                            <input required class="form__input" type="password" id="password" placeholder="Password"/>
-                            <label class="form__label" for="password">Password</label>
-                            <span class="form__icon"><i class="fa-solid fa-lock"></i></span>
+                            <input
+                                required
+                                class="form__input"
+                                type="password"
+                                id="password"
+                                placeholder="Password"
+                            />
+                            <label class="form__label" for="password"
+                                >Password</label
+                            >
+                            <span class="form__icon"
+                                ><i class="fa-solid fa-lock"></i
+                            ></span>
                         </div>
                         <div class="form__group">
-                            <input required class="form__input" type="password" id="repeat-password" placeholder="Repeat Password"/>
-                            <label class="form__label" for="repeat-password">Repeat Password</label>
-                            <span class="form__icon"><i class="fa-solid fa-repeat"></i></span>
+                            <input
+                                required
+                                class="form__input"
+                                type="password"
+                                id="repeat-password"
+                                placeholder="Repeat Password"
+                            />
+                            <label class="form__label" for="repeat-password"
+                                >Repeat Password</label
+                            >
+                            <span class="form__icon"
+                                ><i class="fa-solid fa-repeat"></i
+                            ></span>
                         </div>
                         <div class="form__group form__group-checkbox">
-                            <input required class="form__input-checkbox" type="checkbox" id="checkbox" hidden/>
-                            <label class="form__label-checkbox" for="checkbox">I accept the terms and condition</label>
+                            <input
+                                required
+                                class="form__input-checkbox"
+                                type="checkbox"
+                                id="checkbox"
+                                hidden
+                            />
+                            <label class="form__label-checkbox" for="checkbox"
+                                >I accept the terms and condition</label
+                            >
                         </div>
                         <button class="sign-form__btn">Sign Up</button>
+                        <p class="mobile-sign-up__callout">
+                            Already have an account?
+                            <a
+                                href="./login.html"
+                                class="mobile-sign-up__callout-link"
+                                >Login</a
+                            >
+                        </p>
                         <div class="form__login-with">
                             <span>Or</span>
                             <span>Login With</span>
@@ -143,7 +201,7 @@
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                             <a href="#!" class="form__icon-social">
-                                <img src="./assets/icon/icon--gg.svg" alt="">
+                                <img src="./assets/icon/icon--gg.svg" alt="" />
                             </a>
                         </div>
                     </form>
@@ -159,7 +217,12 @@
                             alt=""
                             class="sign-up__img"
                         />
-                        <p class="sign-up__callout">Already have an account? <a href="./login.html" class="sign-up__callout-link">Login</a></p>
+                        <p class="sign-up__callout">
+                            Already have an account?
+                            <a href="./login.html" class="sign-up__callout-link"
+                                >Login</a
+                            >
+                        </p>
                     </figure>
                 </div>
             </div>

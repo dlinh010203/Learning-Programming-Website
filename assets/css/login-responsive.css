@@ -1,0 +1,59 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-login__callout {
+        display: none;
+    }
+
+    .back-home {
+        display: none;
+    }
+}
+/* Tablet & Mobile */
+@media screen and (max-width: 991px) {
+    .login__wrap-img {
+        display: none;
+    }
+
+    .login__form {
+        position: relative;
+    }
+
+    .back-home {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 36px;
+        color: #0c3b71;
+    }
+
+    .mobile-login__callout {
+        text-align: center;
+        color: #0c3b71;
+        margin-top: 20px;
+    }
+    .mobile-login__callout-link {
+        font-weight: 600;
+        color: #0c3b71;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .login__inner {
+        grid-template-columns: 70%;
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .login__inner {
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+
+    .login__form {
+        padding: 36px 28px;
+        border-radius: 12px;
+    }
+}

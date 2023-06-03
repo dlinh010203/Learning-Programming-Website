@@ -5,23 +5,82 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LightKey Education</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./assets/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -37,8 +96,9 @@
         />
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/login.css" />
+        <link rel="stylesheet" href="./assets/css/login-responsive.css" />
     </head>
-<body>
+    <body>
         <div class="login">
             <div class="container">
                 <div class="login__inner">
@@ -49,40 +109,84 @@
                                 <span style="color: orange">.</span></a
                             >
                         </div>
-                        <img src="./assets/img/login-img.svg" alt="" class="login__img">
-                        <p class="login__callout">Don't have an account? <a class="login__callout-link" href="./signup.html">Click here</a></p>
+                        <img
+                            src="./assets/img/login-img.svg"
+                            alt=""
+                            class="login__img"
+                        />
+                        <p class="login__callout">
+                            Don't have an account?
+                            <a class="login__callout-link" href="./signup.html"
+                                >Click here</a
+                            >
+                        </p>
                     </figure>
                     <form class="login__form">
-                        <h2 class="login-form__heading">Hello,<br>Welcome back</h2>
+                        <a href="./index.html">
+                            <div class="back-home">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </a>
+                        <h2 class="login-form__heading">
+                            Hello,<br />Welcome back
+                        </h2>
                         <p class="login-form__desc">Please login to continue</p>
                         <div class="form__group">
-                            <input required type="email" id="email" class="form__input" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <input
+                                required
+                                type="email"
+                                id="email"
+                                class="form__input"
+                                placeholder="Email"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            />
                             <label for="email" class="form__label">Email</label>
                             <span class="form__icon">
                                 <i class="fa-solid fa-user"></i>
                             </span>
                         </div>
                         <div class="form__group">
-                            <input required type="password" id="password" class="form__input" placeholder="Password" minlength="8">
-                            <label for="password" class="form__label">Passwork</label>
+                            <input
+                                required
+                                type="password"
+                                id="password"
+                                class="form__input"
+                                placeholder="Password"
+                                minlength="8"
+                            />
+                            <label for="password" class="form__label"
+                                >Passwork</label
+                            >
                             <span class="form__icon">
-                                <i class="fa-solid fa-lock"></i></i>
+                                <i class="fa-solid fa-lock"></i>
                             </span>
                         </div>
                         <div class="form__row">
                             <div class="form__group">
-                                <input  type="checkbox" name="" id="checkbox">
-                                <label for="checkbox" class="form__label-checkbox">Remember</label>
+                                <input type="checkbox" name="" id="checkbox" />
+                                <label
+                                    for="checkbox"
+                                    class="form__label-checkbox"
+                                    >Remember</label
+                                >
                             </div>
                             <a href="" class="form__forgot">Fogot Password?</a>
                         </div>
-                        <button type="submit" class="form__btn">
-                            Login
-                        </button>
+
+                        <button type="submit" class="form__btn">Login</button>
+                        <p class="mobile-login__callout">
+                            Don't have an account?
+                            <a
+                                class="mobile-login__callout-link"
+                                href="./signup.html"
+                                >Click here</a
+                            >
+                        </p>
                         <div class="form__login-with">
                             <span>Or</span>
                             <span>Login With</span>
                         </div>
+
                         <div class="form__social">
                             <a href="#!" class="form__icon-social">
                                 <i class="fa-brands fa-facebook-f"></i>
@@ -91,12 +195,12 @@
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                             <a href="#!" class="form__icon-social">
-                                <img src="./assets/icon/icon--gg.svg" alt="">
+                                <img src="./assets/icon/icon--gg.svg" alt="" />
                             </a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-</body>
+    </body>
 </html>
