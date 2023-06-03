@@ -395,7 +395,7 @@ button {
     display: flex;
     column-gap: 20px;
     margin-top: 50px;
-    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 

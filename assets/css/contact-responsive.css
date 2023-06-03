@@ -114,12 +114,13 @@
         display: none;
     }
 
-    /* Footer */
     /* footer */
     .footer__row {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 50px;
     }
+
+   
 }
 
 /* Mobile */
