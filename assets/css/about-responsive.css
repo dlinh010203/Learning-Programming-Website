@@ -109,11 +109,11 @@
 
     /* About */
     .about {
-        padding-bottom: 50px;
+        padding: 50px 0;
     }
     .about__inner {
         flex-direction: column;
-        gap: 50px 0;
+        gap: 30px 0;
     }
 
     .about__wrap-img {
@@ -210,6 +210,11 @@
     .logo__branch {
         font-size: 24px;
     }
+
+    .toogle-menu {
+        width: 28px;
+    }
+
     .menu-drawer {
         inset: 0;
     }
@@ -230,6 +235,15 @@
 
     .tablet-seperate {
         display: none;
+    }
+
+    /* breadcrum */
+    .page-title-area {
+        height: 245px;
+    }
+
+    .heading-lv2 {
+        font-size: 3.5rem;
     }
 
     /* About */

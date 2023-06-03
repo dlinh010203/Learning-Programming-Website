@@ -201,7 +201,6 @@
     .feedback__item:hover {
         transform: translateY(0);
     }
-   
 
     /* Stats */
 
@@ -242,13 +241,10 @@
     .blogs-item__wrap-img {
         width: 100%;
     }
-
-  
 }
 
 /* Tablet  */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    
     .hero__heading {
         font-size: 42px;
     }
@@ -337,6 +333,11 @@
     .logo__branch {
         font-size: 24px;
     }
+
+    .toogle-menu {
+        width: 28px;
+    }
+
     .menu-drawer {
         inset: 0;
     }
@@ -412,7 +413,6 @@
     /* Feedback */
     .feedback__list {
         grid-template-columns: 100%;
-       
     }
 
     .features__item {
@@ -456,6 +456,6 @@
     }
 
     .footer__input {
-        width: 220px
+        width: 220px;
     }
 }

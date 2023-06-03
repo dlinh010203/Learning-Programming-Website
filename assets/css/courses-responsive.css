@@ -24,6 +24,7 @@
     .logo__branch {
         font-size: 24px;
     }
+    
 
     .seperate {
         margin: 18px 0;
@@ -154,6 +155,11 @@
     .logo__branch {
         font-size: 24px;
     }
+
+    .toogle-menu {
+        width: 28px;
+    }
+
     .menu-drawer {
         inset: 0;
     }
@@ -174,6 +180,15 @@
 
     .tablet-seperate {
         display: none;
+    }
+
+    /* breadcrum */
+    .page-title-area {
+        height: 245px;
+    }
+
+    .heading-lv2 {
+        font-size: 3.5rem;
     }
 
     /* Courses */
