@@ -11,6 +11,10 @@
 }
 /* Tablet & Mobile */
 @media screen and (max-width: 991px) {
+    .container {
+        width: auto;
+        max-width: 100%;
+    }
     .sign-up__form {
         position: relative;
     } 
@@ -48,6 +52,9 @@
 
 /* Mobile */
 @media screen and (max-width: 767px) {
+    .sign-up {
+        padding: 0;
+    }
     .sign-up__inner {
         grid-template-columns: 100%;
         justify-content: center;
@@ -57,4 +64,6 @@
         padding: 36px 28px;
         border-radius: 12px;
     }
+
+    
 }

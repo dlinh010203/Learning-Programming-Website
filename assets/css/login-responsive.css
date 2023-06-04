@@ -10,6 +10,10 @@
 }
 /* Tablet & Mobile */
 @media screen and (max-width: 991px) {
+    .container {
+        width: auto;
+        max-width: 100%;
+    }
     .login__wrap-img {
         display: none;
     }
@@ -43,6 +47,10 @@
         grid-template-columns: 70%;
         justify-content: center;
     }
+
+    .login__form {
+        padding: 50px;
+    }
 }
 
 /* Mobile */
@@ -55,5 +63,10 @@
     .login__form {
         padding: 36px 28px;
         border-radius: 12px;
+    }
+
+
+    .sign-up {
+        padding: 0;
     }
 }
