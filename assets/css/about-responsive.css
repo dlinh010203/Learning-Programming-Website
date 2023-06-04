@@ -3,6 +3,10 @@
     .hide-on-pc {
         display: none;
     }
+
+    .lectures__control {
+        display: none;
+    }
 }
 
 /* Tablet & Mobile */
