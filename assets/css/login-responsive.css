@@ -55,6 +55,9 @@
 
 /* Mobile */
 @media screen and (max-width: 767px) {
+    .login {
+        padding: 0;
+    }
     .login__inner {
         grid-template-columns: 100%;
         justify-content: center;
