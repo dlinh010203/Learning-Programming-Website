@@ -414,6 +414,9 @@
         row-gap: 30px;
     }
 
+    .courses-item__desc {
+        white-space: normal;
+    }
     /* Feedback */
     .feedback__list {
         grid-template-columns: 100%;
