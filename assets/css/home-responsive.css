@@ -393,6 +393,10 @@
         width: 333px;
     }
 
+    .features-item__desc {
+        margin-top: 32px;
+    }
+    
     /* Courses */
     .courses__content {
         flex-direction: column;
