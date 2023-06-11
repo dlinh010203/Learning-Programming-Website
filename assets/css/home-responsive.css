@@ -33,6 +33,20 @@
         display: none;
     }
 
+    .menu-action__cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        color: #fff;
+        width: 42px;
+        height: 42px;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 50%;
+
+    }
+
     .toogle-menu {
         width: 32px;
         color: #fff;
@@ -245,6 +259,8 @@
 
 /* Tablet  */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+   
+
     .hero__heading {
         font-size: 42px;
     }
@@ -334,12 +350,16 @@
         font-size: 24px;
     }
 
+    .menu-action__cart {
+        margin-left: auto;
+    }
+
     .toogle-menu {
         width: 28px;
     }
 
     .menu-drawer {
-        inset: 0;
+        inset: 0 0 0 25%;
     }
 
     .menu-search__input {
