@@ -118,7 +118,7 @@ button {
     font-weight: 500;
     color: #fff;
     padding: 10px 20px;
-    transition: .2s;    
+    transition: .1s;    
 }
 
 .nav__link::before {
@@ -154,11 +154,13 @@ button {
 }
 
 .nav__courses {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     transition: .3s;
     position: absolute;
     top: 60px;
     left: 10px;
+    transition: .3s;
 }
 
 .nav__courses:hover + .nav__link--action {
@@ -166,7 +168,8 @@ button {
 }
 
 .nav__item--action:hover .nav__courses{
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -174,7 +177,6 @@ button {
     display: flex;
     flex-direction: column;
     width: 275px;
-    
     background: #fff;
     border-radius: 6px;
     transition: .3s;
@@ -261,7 +263,6 @@ button {
 }
 
 /* Breadcrumb */
-
 .page-title-area {
     display: flex;
     justify-content: center;
