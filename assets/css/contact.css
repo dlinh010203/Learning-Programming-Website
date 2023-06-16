@@ -210,9 +210,10 @@ button {
 }
 
 .nav__courses {
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
+    /* Vì chiếm diện tích nên không thể dùng 2 thuộc tính này */
+    /* opacity: 0;
+    visibility: hidden; */
+    display: none;
     position: absolute;
     top: 60px;
     left: 10px;
@@ -224,8 +225,9 @@ button {
 }
 
 .nav__item--action:hover .nav__courses{
-    opacity: 1;
-    visibility: visible;
+    /* opacity: 1;
+    visibility: visible; */
+    display: block;
 }
 
 

@@ -150,22 +150,24 @@ button {
 }
 
 .nav__courses {
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
+    /* Vì chiếm diện tích nên không thể dùng 2 thuộc tính này */
+    /* opacity: 0;
+    visibility: hidden; */
+    display: none;
     position: absolute;
     top: 60px;
     left: 10px;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .nav__courses:hover + .nav__link--action {
     font-weight: 700;
 }
 
-.nav__item--action:hover .nav__courses {
-    opacity: 1;
-    visibility: visible;
+.nav__item--action:hover .nav__courses{
+    /* opacity: 1;
+    visibility: visible; */
+    display: block;
 }
 
 .nav-courses__list {
