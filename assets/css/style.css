@@ -153,8 +153,7 @@ button {
 }
 
 .nav__courses {
-    opacity: 0;
-    visibility: hidden;
+    display: none;
     transition: .3s;
     position: absolute;
     top: 60px;
@@ -167,8 +166,7 @@ button {
 }
 
 .nav__item--action:hover .nav__courses{
-    opacity: 1;
-    visibility: visible;
+    display: block;
 }
 
 
@@ -262,7 +260,6 @@ button {
 }
 
 /* Hero */
-
 .hero {
     padding: 60px 110px 100px;
     background: var(--primary-color);

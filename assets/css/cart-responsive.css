@@ -3,6 +3,10 @@
     .hide-on-pc {
         display: none;
     }
+
+    .courses__price-on-mobile {
+        display: none;
+    }
 }
 /* Tablet & Mobile */
 @media screen and (max-width: 992px) {
@@ -118,6 +122,15 @@
     .menu-navbar__item:nth-of-type(4) .menu-navbar__link {
         column-gap: 20px;
     }
+
+    .cart__inner {
+        flex-direction: column;
+        gap: 70px 0;
+    }
+
+    .courses__list {
+        width: 100%;
+    }
 }
 
 /* Tablet  */
@@ -129,6 +142,10 @@
         max-width: 600px;
     }
     .menu-search-form {
+        display: none;
+    }
+
+    .courses__price-on-mobile {
         display: none;
     }
 
@@ -196,6 +213,34 @@
     .heading-lv2 {
         font-size: 3.5rem;
     }
+
+    .cart__pay-chanel {
+        gap: 16px;
+    }
+
+    .courses__price {
+        display: none;
+    }
+
+    .courses__price-on-mobile {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #000;
+        margin-top: 20px;
+        
+        text-align: center;
+    }
+
+    .courses-item__row {
+        flex-wrap: wrap;
+        gap: 10px 20px;
+    }
+
+    .courses-item__dot::before {
+        display: none;
+    }
+
+    
 
     /* Footer */
     .footer__row {

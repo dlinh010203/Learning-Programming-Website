@@ -363,11 +363,13 @@ button {
     border-radius: 4px;
 }
 
-.courses-item__star-group {
+.courses-item__stats {
     display: flex;
+    flex-wrap: wrap;
     gap: 0 4px;
     align-items: center;
     margin-top: 8px;
+
 }
 .courses-item__features {
     display: inline-block;
@@ -390,7 +392,7 @@ button {
 
 .courses-item__row {
     display: flex;
-    gap: 0 30px;
+    gap: 10px 30px;
     font-size: 1.4rem;
     margin-top: 8px;
 }
@@ -399,11 +401,11 @@ button {
     position: relative;
 }
 
-.courses-item__dot::after {
+.courses-item__dot::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -20px;
+    left: -20px;
     content: "";
     display: inline-block;
     width: 8px;
@@ -412,9 +414,11 @@ button {
     background: #000;
 }
 
-.courses-item__dot:last-child::after {
+.courses-item__dot:first-child::before {
     display: none;
 }
+
+
 
 .courses-item__action {
     display: flex;
@@ -476,6 +480,7 @@ button {
 }
 
 .cart__input {
+    flex-shrink: 0;
     font-size: 1.4rem;
     padding: 12px 4px;
     text-transform: uppercase;
@@ -487,8 +492,8 @@ button {
 }
 
 .cart-btn-promotions {
+    flex-grow: 1;
     margin-top: 0;
-    max-width: 100px;
     padding: 14px;
 }
 
@@ -502,7 +507,7 @@ button {
 
 .cart__pay-chanel-img {
     width: 70px;
-    height: 60px;
+    height: 52px;
 }
 
 .cart__pay-chanel-thumb {
@@ -514,6 +519,9 @@ button {
     border-radius: 8px;
 }
 
+.cart__pay-chanel-gojek {
+    width: 80px;
+}
 /* Footer */
 .footer {
     color: #c9d2da;
